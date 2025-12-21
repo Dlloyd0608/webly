@@ -10,7 +10,7 @@ Static website builder app for multiple projects
 
 ### B. Core Architecture Principles
 - **Separation of Concerns**: Configuration, content, presentation, and build logic
-- **Hub-and-Spoke Navigation**: 2-level hierarchical structure
+- **Hub-and-Spoke Navigation**: 3-level hierarchical structure
 - **Element-Based Content**: Modular, reusable content blocks
 - **Static Site Generation**: Pre-rendered HTML for performance and SEO
 
