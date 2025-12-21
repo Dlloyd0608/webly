@@ -1,0 +1,37 @@
+{{!--
+  file: ./templates/split_layout.hbs
+  Pattern: Unified Split Layout
+  
+  Description:
+  Obediently renders elements into left/right columns as dictated by the 
+  JSON "position" attribute injected by the renderer at build-time.
+  
+  Stability: Fallback logic prevents content loss for unpositioned elements.
+--}}
+
+{{#with block}}
+<section class="static-section {{splitClass (default split "50-50")}}" 
+         data-block-id="{{id}}"
+         data-pattern="split-layout">
+  
+  {{!-- Obedient Left Column: Renders elements explicitly tagged "left" --}}
+  <div class="column column-left">
+    {{#each elements}}
+      {{#if (eq position "left")}}
+        {{{renderElement this}}}
+      {{/if}}
+    {{/each}}
+  </div>
+
+  {{!-- Resilient Right Column: Renders elements explicitly tagged "right" 
+        OR elements without any position tag to prevent content loss. --}}
+  <div class="column column-right">
+    {{#each elements}}
+      {{#if (or (eq position "right") (not position))}}
+        {{{renderElement this}}}
+      {{/if}}
+    {{/each}}
+  </div>
+
+</section>
+{{/with}}
