@@ -1,0 +1,19 @@
+{{!--
+  file: ./templates/text_block.hbs
+  Template for "text-block" layout (Pattern: Simple Text Block)
+--}}
+
+{{#with block}}
+{{!-- Access customClass directly from the parent context, where settings are merged --}}
+<section class="static-section text-block-section {{customClass}}" 
+         data-block-id="{{id}}"
+         data-pattern="text-block"> 
+
+  <div class="static-text-container" style="max-width: 800px; margin: 0 auto;">
+      
+    {{#each elements}}
+      {{{renderElement this}}}
+    {{/each}}
+  </div>
+</section>
+{{/with}}
