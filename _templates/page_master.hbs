@@ -1,0 +1,221 @@
+{{!--
+  file: ./templates/page.hbs
+  Master Page Template
+  
+  Description:
+  Complete HTML document structure that wraps all content.
+  Integrates all site-level patterns (1-4) and content patterns (5-14).
+  
+  Patterns Used:
+  - Pattern 1: Announcement Banner (optional, top of page)
+  - Pattern 2: App Header (logo + branding)
+  - Pattern 3: Primary Navigation Bar
+  - Pattern 4: Footer
+  
+  Data Sources:
+  - site: Site configuration (site_config.json)
+  - page: Page configuration (*.page.json)
+  - content: Content data (*.content.json)
+  - headerHTML: Pre-rendered page header
+  - secondaryNavHTML: Pre-rendered secondary navigation
+  - contentHTML: Pre-rendered content sections
+  - primaryNav: Primary navigation items array
+  - footer: Footer data object
+  
+  Features:
+  - Semantic HTML5 structure
+  - SEO metadata (title, description, keywords)
+  - Embedded JSON for progressive enhancement (REMOVED: Now loaded externally if needed)
+  - Responsive viewport configuration
+  - Accessibility features
+  - CSS and JavaScript loading
+  
+  Output: Complete static HTML page
+--}}
+<!DOCTYPE html>
+<html lang="{{site.languages.default}}" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  {{!-- Page Title --}}
+  <title>{{page.metadata.title}}{{#if site.branding.siteName}} | {{site.branding.siteName}}{{/if}}</title>
+  
+  {{!-- SEO Meta Tags --}}
+  {{#if page.metadata.description}}
+  <meta name="description" content="{{escapeHtml page.metadata.description}}">
+  {{/if}}
+  
+  {{#if page.metadata.keywords}}
+  <meta name="keywords" content="{{join page.metadata.keywords ", "}}">
+  {{/if}}
+  
+  {{!-- Open Graph / Social Media --}}
+  <meta property="og:title" content="{{page.metadata.title}}">
+  {{#if page.metadata.description}}
+  <meta property="og:description" content="{{escapeHtml page.metadata.description}}">
+  {{/if}}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{site.branding.siteUrl}}/{{page.pageId}}.html">
+  {{#if site.branding.logo.regular}}
+  <meta property="og:image" content="{{site.branding.logo.regular}}">
+  {{/if}}
+  
+  {{!-- Twitter Card --}}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{page.metadata.title}}">
+  {{#if page.metadata.description}}
+  <meta name="twitter:description" content="{{escapeHtml page.metadata.description}}">
+  {{/if}}
+  
+  {{!-- Favicon (optional) --}}
+  {{#if site.branding.favicon}}
+  <link rel="icon" type="image/x-icon" href="{{site.branding.favicon}}">
+  {{/if}}
+  
+  {{!-- Stylesheets --}}
+  <link rel="stylesheet" href="/_styles.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/content.css">
+  <link rel="stylesheet" href="/styles/theme.css">
+  <link rel="stylesheet" href="/styles/responsive.css">
+  
+  {{!-- Preconnect to CDN for faster image loading --}}
+  {{#if site.directories.paths.media}}
+  <link rel="preconnect" href="{{site.directories.paths.media}}" crossorigin>
+  {{/if}}
+  
+  {{!-- Embedded JSON for Progressive Enhancement (REMOVED: Content no longer leaked) --}}
+  {{!-- <script type="application/json" id="site-config"> {{{json site}}} </script> --}}
+  {{!-- <script type="application/json" id="page-data"> {{{json page}}} </script> --}}
+  {{!-- <script type="application/json" id="content-data"> {{{json content}}} </script> --}}
+  
+  {{!-- Analytics (optional) --}}
+  {{#if site.analytics.googleAnalyticsId}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{site.analytics.googleAnalyticsId}}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{site.analytics.googleAnalyticsId}}');
+  </script>
+  {{/if}}
+</head>
+
+<body data-page-id="{{page.pageId}}" data-page-type="{{page.pageType}}" data-hub="{{page.hub}}">
+  
+  {{!-- Skip to Main Content (Accessibility) --}}
+  <a href="#main-content" class="skip-to-main" tabindex="1">Skip to main content</a>
+  
+  {{!-- Pattern 1: Announcement Banner (Optional) --}}
+  {{> announcement-banner site=site}}
+  
+  {{!-- Sticky Header Section --}}
+  <header class="sticky-header-section" role="banner">
+    
+    {{!-- Pattern 2: App Header (Logo + Branding) --}}
+    {{> header site=site currentLanguage=page.language}}
+    
+    {{!-- Pattern 3: Primary Navigation Bar --}}
+    {{> navigation primaryNav=primaryNav}}
+    
+  </header>
+  
+  {{!-- Body Section --}}
+  <section class="body-section">
+    <main class="page-content" id="main-content" role="main">
+      <div class="static-page-content" id="staticPageContainer">
+        
+        {{!-- Page Header (from _header-layouts.json) --}}
+        {{{headerHTML}}}
+        
+        {{!-- Secondary Navigation (from _navigation-layouts.json) --}}
+        {{{secondaryNavHTML}}}
+        
+        {{!-- Main Content Sections (Patterns 5-14) --}}
+        {{{contentHTML}}}
+        
+      </div>
+    </main>
+  </section>
+  
+  {{!-- Pattern 4: Footer --}}
+  {{> footer site=site footerLinks=footer.links}}
+  
+  {{!-- Optional: Progressive Enhancement Script --}}
+  {{#if site.features.progressiveEnhancement}}
+  <script type="module" src="/scripts/app.js" defer></script>
+  {{/if}}
+  
+  {{!-- Carousel Enhancement Script (if page contains carousels) --}}
+  <script>
+    // Simple carousel functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousels = document.querySelectorAll('.carousel-container');
+      
+      carousels.forEach(carousel => {
+        const track = carousel.querySelector('.carousel-track');
+        const items = carousel.querySelectorAll('.carousel-item');
+        const dots = carousel.querySelectorAll('.carousel-dot');
+        const prevBtn = carousel.querySelector('.carousel-control.prev');
+        const nextBtn = carousel.querySelector('.carousel-control.next');
+        
+        let currentIndex = 0;
+        const totalItems = items.length;
+        
+        function showSlide(index) {
+          // Hide all items
+          items.forEach(item => item.classList.remove('active'));
+          dots.forEach(dot => dot.classList.remove('active'));
+          
+          // Show current item
+          if (items[index]) {
+            items[index].classList.add('active');
+          }
+          if (dots[index]) {
+            dots[index].classList.add('active');
+          }
+          
+          currentIndex = index;
+        }
+        
+        function nextSlide() {
+          const next = (currentIndex + 1) % totalItems;
+          showSlide(next);
+        }
+        
+        function prevSlide() {
+          const prev = (currentIndex - 1 + totalItems) % totalItems;
+          showSlide(prev);
+        }
+        
+        // Button event listeners
+        if (nextBtn) {
+          nextBtn.addEventListener('click', nextSlide);
+        }
+        if (prevBtn) {
+          prevBtn.addEventListener('click', prevSlide);
+        }
+        
+        // Dot event listeners
+        dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => showSlide(index));
+        });
+        
+        // Keyboard navigation
+        carousel.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') prevSlide();
+          if (e.key === 'ArrowRight') nextSlide();
+        });
+        
+        // Auto-advance (optional, if configured)
+        {{#if site.carousel.autoAdvance}}
+        setInterval(nextSlide, {{default site.carousel.autoAdvanceInterval 5000}});
+        {{/if}}
+      });
+    });
+  </script>
+  
+</body>
+</html>
