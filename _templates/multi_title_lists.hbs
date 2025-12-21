@@ -1,0 +1,141 @@
+{{!--
+  file: ./templates/layouts/multi-title-lists.hbs
+  Pattern 7: Multi-Title with Multiple Lists
+  
+  Description:
+  Split layout with image/carousel on left and structured content on right 
+  including multiple titled lists. Perfect for feature groupings or detailed 
+  product information.
+  
+  Configuration Source: *.content.json → blocks[id].layout = "multi-title-lists"
+  
+  Content Structure:
+  {
+    "layout": "multi-title-lists",
+    "elements": [
+      {"type": "media", "mediaType": "carousel", "position": "left", ...},
+      {"type": "title", "content": "Main Title", "level": 1},
+      {"type": "paragraph", "content": "Intro paragraph"},
+      {"type": "list", "title": "List Title 1", "style": "checkmark", "items": [...]},
+      {"type": "list", "title": "List Title 2", "style": "checkmark", "items": [...]},
+      {"type": "callToAction", "text": "...", "targetId": "..."}
+    ]
+  }
+  
+  Features:
+  - Default split: 50/50
+  - Image/carousel on left (typically carousel for multi-view)
+  - Main title + intro paragraph
+  - Multiple lists, each with their own title (level 3 heading)
+  - Lists separated visually with spacing
+  - Supports checkmarks, bullets, numbered lists
+  - Optional CTA at end
+  - Responsive: stacks vertically on mobile
+  
+  CSS Classes:
+  - .static-section
+  - .image-left
+  - .split-{ratio}
+  - .media-container
+  - .static-text-container
+  - .list-section (wrapper for titled lists)
+  
+  Usage:
+  Called by renderer when block.layout === "multi-title-lists"
+  
+  Common Use Case:
+  Feature pages with carousel showing multiple views and grouped feature lists
+--}}
+
+{{#with block}}
+<section class="static-section image-left {{splitClass (default split "50-50")}}" 
+         data-block-id="{{id}}"
+         data-pattern="multi-title-lists"
+         {{#if className}}data-custom-class="{{className}}"{{/if}}>
+  
+  {{!-- Left Side: Media Container (Image or Carousel) --}}
+  <div class="media-container">
+    {{!-- Find and render media element with position="left" --}}
+    {{#each elements}}
+      {{#if (and (eq type "media") (eq position "left"))}}
+        {{{renderMedia this}}}
+      {{/if}}
+    {{/each}}
+  </div>
+  
+  {{!-- Right Side: Content Container --}}
+  <div class="static-text-container">
+    {{!-- Render elements in order --}}
+    {{#each elements}}
+      
+      {{!-- Main Title (Level 1 or 2) --}}
+      {{#if (eq type "title")}}
+        {{#if (or (eq level 1) (eq level 2))}}
+          {{{renderTitle this}}}
+        {{/if}}
+      {{/if}}
+      
+      {{!-- Intro Paragraph --}}
+      {{#if (eq type "paragraph")}}
+        {{{renderParagraph this}}}
+      {{/if}}
+      
+      {{!-- Titled List Section --}}
+      {{#if (eq type "list")}}
+        <div class="list-section">
+          {{!-- List Title (Level 3 heading) --}}
+          {{#if title}}
+            <h3 class="list-section-title">{{escapeHtml title}}</h3>
+          {{/if}}
+          
+          {{!-- List Items --}}
+          {{#if (eq style "checkmark")}}
+            <ul class="list-checkmark">
+              {{#each items}}
+                <li>{{{markdown this}}}</li>
+              {{/each}}
+            </ul>
+          {{else if (eq style "bullets")}}
+            <ul class="list-bullets">
+              {{#each items}}
+                <li>{{{markdown this}}}</li>
+              {{/each}}
+            </ul>
+          {{else if (eq style "numbered")}}
+            <ol class="list-numbered">
+              {{#each items}}
+                <li>{{{markdown this}}}</li>
+              {{/each}}
+            </ol>
+          {{else if (eq style "checkbox")}}
+            <ul class="list-checkbox">
+              {{#each items}}
+                <li>{{{markdown this}}}</li>
+              {{/each}}
+            </ul>
+          {{else}}
+            {{!-- Default to bullets --}}
+            <ul class="list-bullets">
+              {{#each items}}
+                <li>{{{markdown this}}}</li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </div>
+      {{/if}}
+      
+      {{!-- Call-to-Action Element --}}
+      {{#if (eq type "callToAction")}}
+        {{{renderCTA this}}}
+      {{/if}}
+      
+      {{!-- Spacer Element --}}
+      {{#if (eq type "spacer")}}
+        {{{renderSpacer this}}}
+      {{/if}}
+      
+    {{/each}}
+  </div>
+  
+</section>
+{{/with}}
