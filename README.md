@@ -6,6 +6,8 @@ Static website builder app for multiple projects
 
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/overview.md
 
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/open-questions.md
+
 
 ## _builder files
 
