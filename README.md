@@ -35,8 +35,8 @@ answer:
    - Multi-tenant data isolation
 
 Important!  
-Phase-1 provide a common support user (id/password) per project and role.  
-Phase-2 support named users (id/password) per project and role.
+Phase-1, provide support for common user roles (id/password) per project. 
+Phase-2, provide support for named users (id/password) per project and role.
 
 2. **Versioning Strategy**: You mention "project versioning" as a requirement. Should this include:
    - Git-like version control for content?
@@ -45,7 +45,7 @@ Phase-2 support named users (id/password) per project and role.
    - Version comparison tools?
 
 answer:
--- Yes to all four items
+-- Yes, to all four items above
 
 3. **Form Handling**: The PDFs show form patterns (1-up, 2-up layouts) but don't explain:
    - Where form submissions go (email, database, API)?
@@ -53,8 +53,8 @@ answer:
    - Integration with CRM or marketing tools?
 
 answer:
--- No form submission is this phase-1  
-Note, the general idea is to generate mockups and with static sample data including error conditions.
+-- No form submission is phase-1  
+Note, the general idea for phase-1 is to generate mockups with static sample data including error conditions.
 
 
 4. **Current vs. Target State**: The phase 3 PDF shows the current implementation is "partially refactored" and "unstable." Should the reorganized outline:
@@ -64,6 +64,7 @@ Note, the general idea is to generate mockups and with static sample data includ
 
 answer:
    -- Yes, stabilization is key for phase-1.  we need to focus on stablizing templates/patterns.
+   Additionaly, we need to restructure the Webly app from handling a single website project to managing multiple website projects.
 
 
 5. **Reports Module**: You mention "forms and reports" but the documentation focuses heavily on forms. What reports are needed:
@@ -73,7 +74,7 @@ answer:
    - SEO performance reports?
 
 answer:
--- Yes to all four items
+-- Yes to all four items above.
 
 
 6. **Asset Management**: Should the reorganized outline include:
