@@ -1,0 +1,14 @@
+/*
+Enginuity Point v0.9 Data Model Viewer
+Master Stylesheet (v0.6 | Rev: 9.1)
+--- FINAL REFACTORED FOR inPowerSuite MIGRATION ---
+*/
+
+@import url('./styles/theme.css');
+@import url('./styles/responsive.css');
+
+/* REMOVED: @import url('./styles/common.css'); */
+/* REMOVED: Obsolete data-model viewer styles (erd-styles.css, domain.css) */
+
+/* temporarily removed @import url('./styles/layout.css');  */
+/* temporarily removed @import url('./styles/content.css'); */

@@ -1,0 +1,520 @@
+/* ADDED TO content.css (v1.8 | Final Safari & Overlay Fix) */
+
+/* ============================================
+   NEW: FORM DEFINITION STYLES
+   ============================================ */
+.form-container {
+    max-width: 900px;
+    margin: var(--spacing-xxlarge) auto;
+    padding: var(--spacing-xxlarge);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.form-title {
+    font-size: var(--font-size-xxlarge);
+    color: var(--brand-primary);
+    margin-bottom: var(--spacing-medium);
+    padding-bottom: var(--spacing-small);
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.form-note {
+    font-size: var(--font-size-small);
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-medium);
+    font-style: italic;
+}
+
+.ips-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-tiny);
+    margin-bottom: var(--spacing-small);
+    min-width: 45%;
+}
+
+.form-group.full {
+    width: 100%;
+    flex-basis: 100%;
+    min-width: unset;
+}
+
+.form-group.half {
+    width: 48%; /* Allows a small gap */
+    flex-grow: 1;
+    min-width: 45%;
+}
+
+.form-group label {
+    font-size: var(--font-size-regular);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-group input:not([type="checkbox"]),
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    font-size: var(--font-size-regular);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 1px var(--brand-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.ips-button {
+    padding: var(--spacing-small) var(--spacing-xlarge);
+    background: var(--brand-primary);
+    color: var(--text-inverse);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.ips-button:hover {
+    background: var(--brand-hover);
+}
+
+.form-submit-container {
+    margin-top: var(--spacing-medium);
+    align-self: flex-start;
+}
+
+
+/* ============================================
+   LINK STYLES
+   ============================================ */
+.detail-link, .detail-link-panel {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+}
+.detail-link:hover, .detail-link-panel:hover {
+    color: var(--brand-primary);
+    text-decoration: underline;
+    opacity: 0.9;
+}
+.detail-link h2, .detail-link-panel h2 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-tiny);
+}
+.detail-arrow {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--brand-primary);
+}
+.read-more-wrapper {
+    margin-top: var(--spacing-medium);
+}
+.read-more-link {
+    color: var(--brand-primary); 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.read-more-link:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+.detail-link-title h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-primary);
+    cursor: pointer;
+}
+
+
+/* ============================================
+   HUB/SPOKE SPECIFIC STYLES
+   ============================================ */
+.page-menu-wrapper {
+    display: none; 
+    padding: var(--spacing-medium) 0;
+    background: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border-primary);
+    box-shadow: var(--shadow-sm);
+    z-index: 50;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.page-menu-wrapper.visible {
+    display: block;
+}
+.page-submenu-bar {
+    display: flex;
+    justify-content: center;
+    padding: 0 var(--spacing-large);
+}
+.page-submenu {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-small);
+    margin: 0;
+    padding: 0;
+}
+.page-submenu-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-primary);
+    padding: var(--spacing-tiny) var(--spacing-medium);
+    border-radius: 4px;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.page-submenu-item:hover {
+    background: var(--bg-hover);
+}
+.page-submenu-item.active {
+    background: var(--brand-primary);
+    color: var(--text-inverse);
+    border-color: var(--brand-primary);
+}
+
+
+/* --- SIBLING NAVIGATION BAR --- */
+.sibling-nav-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-small);
+    margin: var(--spacing-large) auto var(--spacing-xxlarge);
+    padding: var(--spacing-medium);
+    background: var(--bg-accent);
+    border-radius: 8px;
+    max-width: 900px;
+    border: 1px solid var(--border-secondary);
+}
+.sibling-nav-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-tertiary);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.sibling-nav-item:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+.sibling-nav-item.active {
+    background: var(--brand-secondary);
+    color: var(--text-inverse);
+    border-color: var(--brand-secondary);
+}
+.nav-hub-link {
+    color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    font-weight: bold;
+}
+.nav-hub-link:hover {
+    background: var(--bg-accent);
+    color: var(--brand-hover);
+}
+
+
+/* ============================================
+   STATIC CONTENT SECTIONS - SAFARI-COMPATIBLE VERSION
+   ============================================ */
+
+.static-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-xxlarge);
+    gap: var(--spacing-xlarge);
+    padding: var(--spacing-medium) 0;
+    flex-direction: row; /* Explicit default for Safari */
+}
+
+.static-section:last-child {
+    margin-bottom: 0;
+}
+
+/* SAFARI FIX: Base flex properties with explicit values */
+.static-section .media-container,
+.static-section .static-text-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0; /* Critical for Safari */
+    width: auto; /* Prevents width conflicts */
+}
+
+/* Split Section Definitions - REVISED FOR SAFARI */
+/* Use max-width instead of !important to avoid conflicts */
+.static-section.split-50-50 .media-container,
+.static-section.split-50-50 .static-text-container {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.static-section.split-30-70 .media-container {
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+.static-section.split-30-70 .static-text-container {
+    flex-basis: 70%;
+    max-width: 70%;
+}
+
+.static-section.split-70-30 .media-container {
+    flex-basis: 70%;
+    max-width: 70%;
+}
+
+.static-section.split-70-30 .static-text-container {
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+/* IMAGE ALTERNATION - SAFARI-COMPATIBLE */
+/* Default: Text | Image (Image Right) */
+.static-section,
+.static-section.image-right {
+    flex-direction: row;
+}
+
+/* Reverse: Image | Text (Image Left) */
+.static-section.image-left {
+    flex-direction: row-reverse;
+}
+
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+.static-text-container h2 {
+    font-size: var(--font-size-entity-title);
+    font-weight: 600;
+    margin-bottom: var(--spacing-medium);
+}
+
+.static-text-container p {
+    margin-bottom: var(--spacing-medium);
+    font-size: var(--font-size-medium);
+}
+
+.static-text-container ul {
+    margin-left: var(--spacing-large);
+    margin-bottom: var(--spacing-medium);
+    list-style-type: disc;
+    padding-left: 0;
+}
+
+.static-text-container ul li {
+    margin-bottom: var(--spacing-tiny);
+    font-size: var(--font-size-medium);
+}
+
+/* --- FEATURE LIST STYLES --- */
+.feature-list-section {
+    display: block; 
+}
+.feature-list-section .section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xlarge);
+}
+.feature-panel-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-large);
+    justify-content: space-between;
+}
+.feature-panel {
+    background: var(--bg-tertiary);
+    border-radius: 6px;
+    padding: var(--spacing-medium);
+    box-shadow: var(--shadow-sm);
+    flex-basis: calc(50% - var(--spacing-medium)); 
+}
+.feature-panel-container.columns-1 .feature-panel {
+    flex-basis: 100%;
+}
+.feature-panel-container.columns-3 .feature-panel {
+    flex-basis: calc(33.333% - var(--spacing-medium));
+}
+.feature-panel-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+}
+.feature-panel h2 {
+    font-size: var(--font-size-xlarge);
+    margin: 0;
+}
+.feature-panel ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.feature-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+
+/* ============================================
+   CAROUSEL AND MEDIA STYLES
+   ============================================ */
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: none;
+    position: relative;
+}
+.carousel-item:first-child, .carousel-item.active {
+    display: block; 
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 20;
+    font-size: 1.5em;
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.carousel-control:hover {
+    opacity: 1;
+}
+.carousel-control.prev {
+    left: 10px;
+}
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Carousel Indicators (Dots) */
+.carousel-dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.carousel-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.carousel-dot.active {
+    background: var(--brand-primary);
+    border: 1px solid white;
+}
+
+/* ============================================
+   IMAGE OVERLAY STYLES - OPT-IN HERO SECTIONS
+   ============================================ */
+/* CRITICAL FIX: Only apply overlay to sections with explicit hero-overlay class */
+/* This prevents breaking flexbox layout on first sections */
+
+.static-section.hero-overlay {
+    position: relative;
+    display: block; /* Only hero sections should be block, not flex */
+}
+
+.static-section.hero-overlay .media-container {
+    width: 100%;
+    flex: none;
+}
+
+/* Overlay text positioning for hero sections only */
+.static-section.hero-overlay .static-text-container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-inverse);
+    background: rgba(0, 0, 0, 0.4);
+    padding: var(--spacing-xxlarge);
+    z-index: 10; 
+}
+
+.static-section.hero-overlay .static-text-container h2 {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin: 0;
+}
+
+.static-section.hero-overlay .static-text-container p,
+.static-section.hero-overlay .static-text-container a {
+    display: none; 
+}

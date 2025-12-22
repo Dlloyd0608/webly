@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inPowerSuite</title>
+    <link rel="stylesheet" href="_styles.css">
+
+    <link rel="stylesheet" href="./styles/layout.css?v=2">
+    <link rel="stylesheet" href="./styles/content.css?v=2">
+
+</head>
+<body>
+    <header class="sticky-header-section">
+        <div class="app-header">
+            <div class="hamburger-icon" id="hamburgerIcon">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="header-content">
+                <h1>inPowerSuite</h1>
+            </div>
+            
+            <div class="header-controls">
+                <div id="language-selector" class="language-selector">
+                    </div>
+            </div>
+        </div>
+
+        <nav id="ips-main-menu" class="main-menu-bar"></nav>
+
+        </header>
+
+    <section class="body-section">
+        <main class="page-content" id="content">
+            <div class="welcome" id="welcome">
+                </div>
+
+            <div class="content-view" id="contentView" style="display: none;">
+                </div>
+
+            <div class="static-page-content" id="staticPageContainer" style="display: none;">
+                </div>
+            
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+
+            <div class="error" id="error" style="display: none;">
+                <h3>Error Loading Content</h3>
+                <p id="errorMessage"></p>
+                <button onclick="location.reload()">Reload Page</button>
+            </div>
+        </main>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links" id="footer-nav-links">
+            </div>
+        <div class="footer-copy" id="footer-copy-content">
+            </div>
+    </footer>
+<script type="module" src="_app.js?v=5"></script>
+</body>
+</html>
