@@ -12,6 +12,25 @@ https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/content
 
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/webgen-quick-ref.md
 
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/old-json_tags_matrix.md
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/old-templates_all_layouts.md
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/old-webgen_cicd_summary.md
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/old-build_complete_setup.md
+
+https://github.com/Dlloyd0608/webly/edit/main/_docs/old-webgen-app-cost.pdf
+
+https://github.com/Dlloyd0608/webly/edit/main/_docs/old-webgen-app-design.pdf
+
+https://github.com/Dlloyd0608/webly/edit/main/_docs/old-webgen-content-format.pdf
+
+https://github.com/Dlloyd0608/webly/edit/main/_docs/old-webgen-site-patterns.pdf
+
+https://github.com/Dlloyd0608/webly/edit/main/_docs/old-webgen-v2.pdf
+
+
 
 ## _buildr files
 
