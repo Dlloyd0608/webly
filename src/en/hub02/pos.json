@@ -1,0 +1,64 @@
+{
+  "id": "pos",
+  "pageType": "spoke",
+  "pageTitle": "Point of Sale & Retail",
+  "sections": [
+    {
+      "type": "alternatingImage",
+      "title": "Point of Sale (POS)",
+      "paragraph": "Mobile ready solution built for tablet devices to perform floor/counter sales and exchanges.",
+      "imageSrc": "https://www.inpowersuite.com/assets/images/pos-system.png",
+      "imageSide": "image-left"
+    },
+    {
+      "type": "featureList",
+      "title": "POS Features",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Retail Operations",
+          "listItems": [
+            "Transact sales directly on floor by credit card",
+            "Lookup customers and referrers while ordering",
+            "Apply multiple discounts including coupons, promo codes and offers",
+            "Print or email order confirmation"
+          ]
+        },
+        {
+          "title": "Hardware Integration",
+          "listItems": [
+            "Integrates with cash drawer, card reader, wireless scanner and receipt printer",
+            "Cash drawer management and end of day reports",
+            "Requires additional POS equipment"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureList",
+      "title": "Order Checkout Options",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Checkout Flow",
+          "listItems": [
+            "Express order checkout",
+            "New customer and new member checkout",
+            "Real-time address validation, sales tax look-up and payment",
+            "Auto-responders for order confirmation, customer and member welcome letters, and up-line notifications"
+          ]
+        },
+        {
+          "title": "Autoship / Continuity Ordering",
+          "listItems": [
+            "Configurable products and blackout datest",
+            "Autoship discounts",
+            "Continuity ordering and multi-frequency reordering",
+            "Autoship queues and batching",
+            "Credit card declination auto-responder notifications"
+          ]
+        }
+      ]
+    }
+  ]
+}

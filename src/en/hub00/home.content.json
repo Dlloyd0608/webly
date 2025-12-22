@@ -1,0 +1,131 @@
+{
+  "siteId": "inpowersuite",
+  "contentId": "home-content",
+  "language": "en",
+  "hub": "hub00",
+  "lastUpdated": "2025-11-16",
+  "author": "Marketing Team",
+  
+  "blocks": {
+    "niche-group": {
+      "id": "niche-group",
+      "title": "Niche Group",
+      "paragraph": "Recipient of:\n- 2017 & 2020 Computer Programming Awards\n- Boca Raton, Florida",
+      "media": {
+        "type": "image",
+        "src": "ipsaward.png",
+        "alt": "Niche Group Awards"
+      }
+    },
+
+    "markets": {
+      "id": "markets",
+      "title": "Markets",
+      "paragraph": "INNOVATION, EMPOWERMENT, SUCCESS",
+      "media": {
+        "type": "image",
+        "src": "skyGlobeColor.jpg",
+        "alt": "Global Markets"
+      }
+    },
+
+    "direct-sellers": {
+      "id": "direct-sellers",
+      "title": "Direct Sellers",
+      "paragraph": "Leveraging years of distributor experience, inPowerSuite supports multiple organizational configurations including Multi-Level Marketing and Party Plan verticals.",
+      "media": {
+        "type": "image",
+        "src": "direct-sellers.png",
+        "alt": "Direct Sellers"
+      }
+    },
+
+    "commerce": {
+      "id": "commerce",
+      "title": "Commerce",
+      "paragraph": "inPowerSuite provides a global web deployment platform for launching flexible, scalable web-store solutions in multiple languages and currencies for your business.",
+      "media": {
+        "type": "image",
+        "src": "commerce.png",
+        "alt": "Commerce Platform"
+      }
+    },
+
+    "inpower-people": {
+      "id": "inpower-people",
+      "title": "inPower Your People",
+      "paragraph": "inPowerSuite empowers Sales People to be their best.",
+      "media": {
+        "type": "image",
+        "src": "inpower-people9.png",
+        "alt": "Empower Your People"
+      }
+    },
+
+    "features": {
+      "id": "features",
+      "title": "Features",
+      "paragraph": "Explore our tools and capabilities for members to manage all aspects of their business operations.",
+      "media": {
+        "type": "image",
+        "src": "ips-features.png",
+        "alt": "Features"
+      }
+    },
+
+    "tools": {
+      "id": "tools",
+      "title": "inPowerSuite Tools",
+      "paragraph": "Experience a robust, full-function business center for all active members where they can manage all of their respective back office operations. New and evolving features are continually being added.",
+      "media": {
+        "type": "image",
+        "src": "business-tools.png",
+        "alt": "Business Tools"
+      }
+    },
+
+    "app-manager": {
+      "id": "app-manager",
+      "title": "Application Manager",
+      "paragraph": "Our Application Manager provides essential functions to maintain customers, orders, catalog information, and store parameters.",
+      "media": {
+        "type": "image",
+        "src": "application-manager.png",
+        "alt": "Application Manager"
+      }
+    },
+
+    "integrations": {
+      "id": "integrations",
+      "title": "Add-Ons & Integrations",
+      "paragraph": "As an integration-ready platform, inPowerSuite provides complete support for e-commerce, fulfillment, content management, and financial operations.",
+      "media": {
+        "type": "image",
+        "src": "add-ons.png",
+        "alt": "Add-Ons and Integrations"
+      }
+    },
+
+    "support": {
+      "id": "support",
+      "title": "Support",
+      "paragraph": "ProjectWatch® is a 100% web-based application and can be accessed with the unique user ID issued to you during client enrollment.",
+      "media": {
+        "type": "image",
+        "src": "support.png",
+        "alt": "Support"
+      }
+    },
+
+    "partners": {
+      "id": "partners",
+      "title": "Partners & Brands",
+      "paragraph": "inPowerSuite is used by some of the world's best brands.",
+      "media": {
+        "type": "image",
+        "src": "inpower_clients.png",
+        "alt": "Partners and Brands"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "b2c",
+  "pageType": "spoke",
+  "pageTitle": "Business to Consumer",
+  
+  "sections": [
+    {
+      "type": "paragraph",
+      "content": "inPowerSuite incorporates all main and expected features of a fully functional e-commerce experience and provides easy fit for those companies wanting to leverage their web sites. Blending flexible shopping arrangements and real-time checkout processing into an existing web site is easy to implement. Customers can search your online catalog, select products and suggested items for their shopping cart, store payment and delivery addresses, and select from different shipping services."
+    },
+    {
+      "type": "featureList",
+      "title": "Web Store & Catalog Configurations",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Web Store Configurations",
+          "listItems": [
+            "Real-time e-commerce plug-ins and website blending",
+            "Member organization events, commissions and rewards programs",
+            "Integrated stand-alone or shared catalog",
+            "Multiple physical or logical Warehouses",
+            "Autoship Programs"
+          ]
+        },
+        {
+          "title": "Catalogue & Selling Configurations",
+          "listItems": [
+            "Category hierarchies and listings",
+            "Multi-dimensional product groupings",
+            "Parametrically driven product layouts",
+            "Featured Items / Popular Picks",
+            "Flexible Search Engine by keywords and items",
+            "Up / Side / Substitute-Sells",
+            "Kitting / Bundles",
+            "Unlimited Customer/ Member Pricelists",
+            "Advanced Pricing and Discounting Scenarios"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureList",
+      "title": "Key Features & Back Office",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Key Features & Upsell",
+          "listItems": [
+            "Corporate Website/E-commerce Blending: Supports ease of blending into an existing website",
+            "Basic Product / Keyword Search: Supports exact and fuzzy matching",
+            "Basic Discount Pricing: Supports multiple discount prices for a product simultaneously",
+            "Up/Side-Sell Relationships: Supports unlimited suggestive selling arrangements",
+            "Shipping Rates: Supports custom rates and real-time access to UPS online services",
+            "Order Confirmation: Provides online and email order confirmations",
+            "Order Tracking: Provides ability for returning customers to view order status"
+          ]
+        },
+        {
+          "title": "Payment & Checkout",
+          "listItems": [
+            "Efficient Internet Based Payment Processing: inPowerSuite comes with integrated plug-ins for secured, internet-based, and real-time credit card transaction processing",
+            "Comprehensive Checkout: Customer Registration, Address Standardization, Shipping Rates, Sales Tax Calculations, Credit Card Processing, Email Confirmations",
+            "Payment Methods: Major Credit Cards including JCB, Debit Cards, Checks, On Account (Invoice), Point of Sale",
+            "Payment Processing: Verify and authorize credit card payments, Automated settlement processing, Best-practice encryption techniques",
+            "Customer: Customer Configurable Preferences and Profile Information, Sales Rep Assignment and Auto-assign Capability, Email Order and Shipment Confirmation, Online Order Status and Real-time Order Tracking",
+            "Performance & Scalability: Highly mature PL/SQL code-base, Optimized for secured web access and transactions",
+            "Multiple configurations for scalability"
+          ]
+        }
+      ]
+    }
+  ]
+}

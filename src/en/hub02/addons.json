@@ -1,0 +1,94 @@
+{
+  "id": "addons",
+  "pageType": "spoke",
+  "pageTitle": "Add-Ons & Integrations",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Overview",
+      "content": "inPowerSuite offers a flexible, integration-ready platform, allowing businesses to extend functionality through add-ons and connect seamlessly with third-party systems."
+    },
+    {
+      "type": "featureList",
+      "title": "Core System Modules",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Fulfillment / 3PL Integration",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/fulfillment-icon.png",
+          "listItems": [
+            "Perform light pick/pack/ship operations",
+            "Shipment containerization",
+            "Light warehouse management by BIN locations",
+            "Integration to Third Party Logistics (3PL) vendors (EM3 Commerce, Zoyto, Estafeta, ParcelPort, Geodis, etc.)"
+          ]
+        },
+        {
+          "title": "Commission Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/commission-icon.png",
+          "listItems": [
+            "Configure uni-level, multi-level, stair-step breakaway plans",
+            "Flexible bonus architecture, product rebates",
+            "Coordinate weekly/monthly commission runs and retirement processing",
+            "Provides vital statistics, summaries, and charts of the commission results"
+          ]
+        },
+        {
+          "title": "Content Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/content-icon.png",
+          "listItems": [
+            "Seamless website / web store branding",
+            "Full multi-language support for user-defined content",
+            "Includes labels, messages, email campaigns and business collateral"
+          ]
+        },
+        {
+          "title": "Email Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/email-icon.png",
+          "listItems": [
+            "Manage email blasts and event driven auto-responders for order/shipping confirmations, welcome letters, upline notification, party invitations, jumpstart, and more"
+          ]
+        },
+        {
+          "title": "Batch Processing Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/batch-icon.png",
+          "listItems": [
+            "Manage back-ground processing with Oracle advanced queuing engine for end-of-day jobs"
+          ]
+        },
+        {
+          "title": "Incentive Plan Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/incentive-icon.png",
+          "listItems": [
+            "Manage qualification rules and awards for jumpstart and trip incentive programs"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureList",
+      "title": "ERP & Third Party Integrations",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "ERP Integration",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/erp-icon.png",
+          "listItems": [
+            "Compatible with financial applications including Oracle E-Business, Sage, Intuit QuickBooks and others",
+            "Designed from the ground up to integrate with financial packages",
+            "Minimal impact on current ERP setup and quick time to market"
+          ]
+        },
+        {
+          "title": "Third Party Integration",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/3rdparty-icon.png",
+          "listItems": [
+            "Provides address standardization (North America)",
+            "Interfaces to CCH Sales Tax / Local Tax Rates",
+            "Interfaces to PayPal's PayflowPro, Chase PaymenTech's Orbital, Global Collect's Webcollect, and various country specific gateways"
+          ]
+        }
+      ]
+    }
+  ]
+}

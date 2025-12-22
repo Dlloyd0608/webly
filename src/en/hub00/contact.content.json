@@ -1,0 +1,72 @@
+{
+  "siteId": "inpowersuite",
+  "contentId": "contact-content",
+  "language": "en",
+  "hub": "hub00",
+  "lastUpdated": "2025-11-16",
+  "author": "Marketing Team",
+  
+  "blocks": {
+    "intro": {
+      "id": "intro",
+      "title": "Get In Touch",
+      "paragraph": "inPowerSuite provides multiple channels for clients, prospects, and partners to reach our team. Whether you have questions about our platform, need support, or want to explore a partnership, we are here to help."
+    },
+
+    "contact-info": {
+      "id": "contact-info",
+      "title": "Contact Information",
+      "listItems": [
+        "**Phone:** 1 (561) 893-9300",
+        "**Email:** sales@nichegroup.com",
+        "**Address:** 2255 Glades Road, Ste 3254A, Boca Raton, FL 33431, USA"
+      ]
+    },
+
+    "additional-resources": {
+      "id": "additional-resources",
+      "title": "Additional Resources",
+      "listItems": [
+        "FAQ and Support Portal",
+        "Social media channels",
+        "Office locations and directions"
+      ]
+    },
+
+    "contact-form": {
+      "id": "contact-form",
+      "title": "Online Contact Form",
+      "fields": [
+        {
+          "label": "Your name (required)",
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "size": "half"
+        },
+        {
+          "label": "Your e-mail (required)",
+          "name": "email",
+          "type": "email",
+          "required": true,
+          "size": "half"
+        },
+        {
+          "label": "Subject",
+          "name": "subject",
+          "type": "text",
+          "required": false,
+          "size": "full"
+        },
+        {
+          "label": "Message",
+          "name": "message",
+          "type": "textarea",
+          "required": false,
+          "size": "full"
+        }
+      ],
+      "submitButtonLabel": "Send a message"
+    }
+  }
+}

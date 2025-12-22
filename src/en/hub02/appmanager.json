@@ -1,0 +1,62 @@
+{
+  "id": "appmanager",
+  "pageType": "spoke",
+  "pageTitle": "Application Manager",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Overview",
+      "content": "The Application Manager provides essential tools for maintaining customer accounts, order fulfillment, catalog management, and business parameters within inPowerSuite."
+    },
+    {
+      "type": "featureList",
+      "title": "Application Management Modules",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Customer Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/cm-icon.png",
+          "listItems": [
+            "Customer service module for managing customer inquiries",
+            "Customer account adjustments and other CRM functionality"
+          ]
+        },
+        {
+          "title": "Genealogy Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/gm-icon.png",
+          "listItems": [
+            "Member service module for managing member, sponsor and enroller changes and reassignments"
+          ]
+        },
+        {
+          "title": "Merchandising Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/mm-icon.png",
+          "listItems": [
+            "Configure sellable items with style/color/size matrices and multiple price-lists / volume-pricing / availability by customer type"
+          ]
+        },
+        {
+          "title": "Product Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/pm-icon.png",
+          "listItems": [
+            "Module for managing up-sells, side-sells, mix and match, kits, bundles, BOGOs, store coupons, promotions and more"
+          ]
+        },
+        {
+          "title": "Order Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/om-icon.png",
+          "listItems": [
+            "Customer service module for processing item adjustments, cancellations, returns and related refunds/commission claw-backs"
+          ]
+        },
+        {
+          "title": "Party Management",
+          "iconSrc": "https://www.inpowersuite.com/assets/icons/pty-icon.png",
+          "listItems": [
+            "Module for managing party types, invitation emails, host rewards and more"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "enrollment",
+  "pageType": "spoke",
+  "pageTitle": "Member Enrollment",
+  "sections": [
+    {
+      "type": "alternatingImage",
+      "title": "Overview",
+      "paragraph": "inPowerSuite® provides a comprehensive and customizable member enrollment module for self-serve and up-line initiated new member sign-ups.",
+      "imageSrc": "https://www.inpowersuite.com/assets/images/member-enrollment-overview.png",
+      "imageSide": "image-right"
+    },
+    {
+      "type": "featureList",
+      "title": "Enrollment Features",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Key Features",
+          "listItems": [
+            "Custom fields",
+            "Sponsor lookup (multi-country ready)",
+            "Multiple products and kits",
+            "Flexible payment options",
+            "Downloadable terms and conditions",
+            "Welcome letter and up-line notifications"
+          ]
+        },
+        {
+          "title": "Workflow Management",
+          "listItems": [
+            "Step-by-step enrollment process",
+            "Verification of data and duplicate checking",
+            "Notifications for sponsors and administrators"
+          ]
+        }
+      ]
+    }
+  ]
+}

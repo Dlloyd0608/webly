@@ -1,0 +1,36 @@
+{
+  "id": "sales",
+  "pageType": "spoke",
+  "pageTitle": "Sales, Genealogy and Commissions",
+  "sections": [
+    {
+      "type": "featureList",
+      "title": "Sales and Commission Reports",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Reporting & Analytics",
+          "listItems": [
+            "Reports for sales by frontline, customer, product and party",
+            "Dozens of configurable Google charts by data point, colors and chart types and options",
+            "Commission activity statements"
+          ]
+        },
+        {
+          "title": "Genealogy & Structure",
+          "listItems": [
+            "Graphical and linear genealogy views",
+            "Real-time tracking of team performance and hierarchy"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "alternatingImage",
+      "title": "Sales Tracking",
+      "paragraph": "Real-time KPI tracking and reporting provides immediate insights into sales performance across teams and individuals.",
+      "imageSrc": "https://www.inpowersuite.com/assets/images/sales-tracking.png",
+      "imageSide": "image-left"
+    }
+  ]
+}

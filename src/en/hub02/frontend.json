@@ -1,0 +1,91 @@
+{
+  "id": "frontend",
+  "pageType": "spoke",
+  "pageTitle": "Frontend Modules",
+
+
+  "sections": [
+    {
+      "type": "alternatingImage",
+      "title": "Web Store",
+      "media": {
+        "path": "https://www.inpowersuite.com/assets/images/frontend/", 
+        "layout": "carousel", 
+        "assets": [ 
+          "web-store-1.png", 
+          "web-store-2.png" 
+        ]
+      }, 
+      "imageSide": "image-right",
+
+      "paragraph": "inPowerSuite® supports flexible shopping arrangements including direct to consumer (B2C), member's only (B2B), and party guest orders (B2B2C).",
+      "listItems": [
+          "Flexible product categorization and display styles",
+          "Flexible merchandising arrangements for product offers (promotions, bundles, etc.)",
+          "Support for affiliate programs, club memberships, platform kits, product bundles, volume-pricing, up-sells, and back-order arrangements"
+      ]
+    },
+    {
+      "type": "alternatingImage",
+      "title": "Order Checkout Options",
+      "media": {
+        "path": "https://www.inpowersuite.com/assets/images/frontend/", 
+        "layout": "carousel", 
+        "assets": [ 
+          "checkout-1.png", 
+          "checkout-2.png" 
+        ]
+      }, 
+      "imageSide": "image-left",
+      "paragraph": "Provides options for express checkout and real-time validation for shipping and sales tax.",
+      "listItems": [
+        "Express order checkout",
+        "New customer and new member checkout",
+        "Real-time address validation, sales tax look-up and payment",
+        "Auto-responders for order confirmation, customer and member welcome letters, and up-line notifications"
+      ]
+    },
+    {
+      "type": "alternatingImage",
+      "title": "Autoship-Continuity Ordering",
+      "media": {
+        "path": "https://www.inpowersuite.com/assets/images/frontend/", 
+        "layout": "carousel", 
+        "assets": [ 
+          "autoship-1.png", 
+          "autoship-2.png" 
+        ]
+      }, 
+      "imageSide": "image-right",
+      "paragraph": "Robust tools to manage recurring orders and member retention programs.",
+      "listItems": [
+        "Configurable products and blackout datest",
+        "Autoship discounts",
+        "Continuity ordering and multi-frequency reordering",
+        "Autoship queues and batching",
+        "Credit card declination auto-responder notifications"
+      ]
+    },
+    {
+      "type": "alternatingImage",
+      "title": "Replicated Websites and Tools",
+      "media": {
+        "path": "https://www.inpowersuite.com/assets/images/frontend/", 
+        "layout": "carousel", 
+        "assets": [ 
+          "replicated-site-1.png", 
+          "replicated-site-2.png" 
+        ]
+      }, 
+      "imageSide": "image-left",
+      "paragraph": "Powerful tools for members to create personalized websites and promote products and business opportunities.",
+      "listItems": [
+        "Lead Protection: Visitors are tagged to provide the website owner with lead-protection",
+        "Simple Website Signup Process: Members are allowed to subscribe to their company’s approved personal websites",
+        "Website Compliance Monitor: Simple tools for members to create and maintain unlimited websites",
+        "Website Wizard: Company users have the ability to monitor websites, preview, reject or publish site changes",
+        "Website Autoresponders: Provides personalized electronic notifications"
+      ]
+    }
+  ]
+}

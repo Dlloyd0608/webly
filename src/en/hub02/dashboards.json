@@ -1,0 +1,45 @@
+{
+  "id": "dashboards",
+  "pageType": "spoke",
+  "pageTitle": "Dashboards & Business Portal",
+  "sections": [
+    {
+      "type": "alternatingImage",
+      "title": "Business Portal (User Back-Office)",
+      "paragraph": "inPowerSuite® provides secured access to an extensive set of information portlets, business tools, reports and content by customer type.",
+      "imageSrc": "https://www.inpowersuite.com/assets/images/dashboard-overview.png",
+      "imageSide": "image-right"
+    },
+    {
+      "type": "alternatingImage",
+      "title": "Dashboards",
+      "paragraph": "inPowerSuite® provides configurable, visually stunning and easy-to-use dashboards by customer type.",
+      "imageSrc": "https://www.inpowersuite.com/assets/images/dashboards.png",
+      "imageSide": "image-left"
+    },
+    {
+      "type": "featureList",
+      "title": "Dashboard Features",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Display & Configuration",
+          "listItems": [
+            "Collapsible menu system for managing orders, customers, business tools, reports, profile and dozens of collapsible portlets",
+            "Multiple sales goals by period",
+            "Time sensitive announcements, news, guides, and more",
+            "Video carousel"
+          ]
+        },
+        {
+          "title": "KPI & Recognition",
+          "listItems": [
+            "Multiple performance indicators (KPIs)",
+            "Calendar with multiple events per party",
+            "Multiple banners and recognition portlets for Top-Sales, -Earners, -Promotions, and more"
+          ]
+        }
+      ]
+    }
+  ]
+}

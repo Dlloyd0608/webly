@@ -1,0 +1,51 @@
+{
+  "id": "partyplan",
+  "pageType": "spoke",
+  "pageTitle": "Party Plan",
+  
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Party Plan Overview",
+      "content": "Meeting the demands of Party Planners requires insight into the needs of the Consultants for self-serve order management on the Internet. Party and Hostess Rewards management has never been easier. inPowerSuite provides effective and powerful tools for you and your Consultants to take your organization to the next level of Direct Selling success."
+    },
+    {
+      "type": "alternatingImage",
+      "title": "Configurable Party Setup",
+      "paragraph": "* Configurable party types, messaging, and ordering rules\n* Configurable rules for host dollars and 1/2 priced items\n* Configurable party auto-responders\n* Easy to manage party schedule",
+      "imageSrc": "https://www.inpowersuite.com/assets/images/party-setup.png",
+      "imageSide": "image-left"
+    },
+    {
+      "type": "alternatingImage",
+      "title": "Party Management and Fulfillment",
+      "paragraph": "* Track RSVPs, attendance, and future bookings\n* Manage multiple order types: pre-party, party, rewards and settling order\n* Cash out earnings at the end of a Party\n* Ship directly to guests; or drop ship orders to the designated location",
+      "imageSrc": "https://www.inpowersuite.com/assets/images/party-fulfillment.png",
+      "imageSide": "image-right"
+    },
+    {
+      "type": "featureList",
+      "title": "Factsheet Feature Summary",
+      "columns": 2,
+      "panels": [
+        {
+          "title": "Party Plan Management",
+          "listItems": [
+            "Configurable party types, messaging, and ordering rules",
+            "Configurable rules for host dollars and 1/2 priced items",
+            "Easy to manage party schedule",
+            "Consultant and host portals"
+          ]
+        },
+        {
+          "title": "Commissions & Replicated Websites",
+          "listItems": [
+            "Supports single-level, uni-level, and multi-level commission plans including breakaways",
+            "Enroller and sponsor hierarchies",
+            "Sales territory hierarchies and rolling operating calendars"
+          ]
+        }
+      ]
+    }
+  ]
+}
