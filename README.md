@@ -2,7 +2,7 @@
 Static website builder app for multiple projects
 
 
-## _docs
+## _docs files
 
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/overview.md
 
@@ -13,7 +13,7 @@ https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/content
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/webgen-quick-ref.md
 
 
-## _builder files
+## _buildr files
 
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_buildr/build_config.json
 
@@ -76,6 +76,11 @@ https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/_page-te
 
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/site_config.json
 
+
+## src files
+
+
+## _dist files
 
 
 
