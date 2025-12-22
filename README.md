@@ -8,6 +8,8 @@ https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/overvie
 
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/open-questions.md
 
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/content_patterns_spec2.md
+
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/webgen-quick-ref.md
 
 
