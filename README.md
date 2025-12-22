@@ -1,98 +1,76 @@
 # webly
 Static website builder app for multiple projects
 
-## **I. System Overview**
-## **II. Data Model & Configuration**
-## **III. User Roles & Workflows**
-## **IV. Application Modules**
-## **V. Build System Architecture**
-## **VI. Technology Stack**
-## **VII. Migration Path**
-## **VIII. Key Features by Phase**
 
-## Documents and Raw files
+## _docs
 
-## Site structure (in-flux)
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_docs/overview.md
 
 
+## _builder files
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_buildr/build_config.json
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_buildr/generator.js
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_buildr/handlebars_helpers.js
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_buildr/helpers.js
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_buildr/renderer.js
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_buildr/watcher.js
 
 
 
----
+## _templates
 
-=====================
-Open questions to complete the outline
-=====================
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/announcement_banner.hbs
 
-1. **User Management & Authentication**: The original outline mentions "multiple website administrators and content contributors" but doesn't detail authentication, roles, or permissions. Should I include sections for:
-   - User roles and permissions (Admin vs Contributor capabilities)
-   - Authentication/authorization system
-   - Multi-tenant data isolation
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/complex_split.hbs
 
-answer: 
--- Yes, include sections for:
-   - User roles and permissions (Admin vs Contributor capabilities)
-   - Multi-tenant data isolation
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/footer.hbs
 
-Important!  
-Phase-1, provide support for common user roles (id/password) per project. 
-Phase-2, provide support for named users (id/password) per project and role.
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/form_1_up.hbs
 
-2. **Versioning Strategy**: You mention "project versioning" as a requirement. Should this include:
-   - Git-like version control for content?
-   - Rollback capabilities?
-   - Publishing workflow (draft → review → publish)?
-   - Version comparison tools?
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/form_2_up.hbs
 
-answer:
--- Yes, to all four items above
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/grid_layout.hbs
 
-3. **Form Handling**: The PDFs show form patterns (1-up, 2-up layouts) but don't explain:
-   - Where form submissions go (email, database, API)?
-   - Form validation rules management
-   - Integration with CRM or marketing tools?
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/header.hbs
 
-answer:
--- No form submission is phase-1  
-Note, the general idea for phase-1 is to generate mockups with static sample data including error conditions.
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/multi_title_lists.hbs
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/navigation.hbs
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/page_master.hbs
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/split_layout.hbs
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/stacked_image_bottom.hbs
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/stacked_image_top.hbs
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/text_block.hbs
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_templates/two_column_subtitles.hbs
 
 
-4. **Current vs. Target State**: The phase 3 PDF shows the current implementation is "partially refactored" and "unstable." Should the reorganized outline:
-   - Address stabilization of the current system?
-   - Focus on the Phase 2 (database-driven) migration?
-   - Jump directly to Phase 3 (APEX-driven)?
+## site files
 
-answer:
-   -- Yes, stabilization is key for phase-1.  we need to focus on stablizing templates/patterns.
-   Additionaly, we need to restructure the Webly app from handling a single website project to managing multiple website projects.
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/_header-layouts.json
 
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/_layouts.json
 
-5. **Reports Module**: You mention "forms and reports" but the documentation focuses heavily on forms. What reports are needed:
-   - Build logs and error reports?
-   - Content analytics/usage?
-   - Project status dashboards?
-   - SEO performance reports?
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/_menu.json
 
-answer:
--- Yes to all four items above.
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/_navigation-layouts.json
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/_page-templates.json
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/site_config.json
 
 
-6. **Asset Management**: Should the reorganized outline include:
-   - Asset versioning and CDN integration?
-     -- No, later phase
-   - Image optimization pipeline?
-     -- No, later phase
-   - Video transcoding?
-     -- No, later phase
-   - Asset usage tracking (which pages use which assets)?
-     -- Yes
 
-7. **I18N Strategy**: Multiple languages are mentioned but not detailed. Should this cover:
-   - Translation workflow (manual, API, or both)?
-     -- manual phase-1, API in a latter phase.
-   - Language-specific asset variants?
-     -- No, later phase
-   - RTL language support?
-     -- No, later phase
-   - Language fallback strategies?
-     -- en
+
+
