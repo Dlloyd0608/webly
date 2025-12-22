@@ -1,0 +1,157 @@
+{
+  "siteId": "inpowersuite",
+  "version": "2.0",
+  "lastUpdated": "2025-11-16",
+  
+  "pageTemplates": {
+    "alternating-sections-left-start": {
+      "id": "alternating-sections-left-start",
+      "name": "Alternating Sections (Start Left)",
+      "description": "Multiple sections that alternate image position starting with image on left",
+      "headerLayout": "standard",
+      "secondaryNav": "none",
+      "contentLayout": {
+        "pattern": "repeating-alternating",
+        "firstSide": "left",
+        "defaultSplit": "50-50",
+        "sectionLayout": "alternating-image"
+      },
+      "usage": "Hub pages that showcase multiple offerings (e.g., Markets hub)"
+    },
+
+    "alternating-sections-right-start": {
+      "id": "alternating-sections-right-start",
+      "name": "Alternating Sections (Start Right)",
+      "description": "Multiple sections that alternate image position starting with image on right",
+      "headerLayout": "standard",
+      "secondaryNav": "none",
+      "contentLayout": {
+        "pattern": "repeating-alternating",
+        "firstSide": "right",
+        "defaultSplit": "50-50",
+        "sectionLayout": "alternating-image"
+      },
+      "usage": "Top-level pages with multiple content blocks (e.g., Services page)"
+    },
+
+    "alternating-sections-with-sibling-nav": {
+      "id": "alternating-sections-with-sibling-nav",
+      "name": "Alternating Sections + Sibling Navigation",
+      "description": "Standard alternating layout with sibling navigation bar for spoke pages",
+      "headerLayout": "standard",
+      "secondaryNav": "tab-bar-sibling",
+      "contentLayout": {
+        "pattern": "repeating-alternating",
+        "firstSide": "right",
+        "defaultSplit": "50-50",
+        "sectionLayout": "alternating-image"
+      },
+      "usage": "Spoke pages within a hub that need sibling navigation (e.g., MLM, Party Plan)"
+    },
+
+    "hub-with-tab-menu": {
+      "id": "hub-with-tab-menu",
+      "name": "Hub Page with Tab Menu",
+      "description": "Hub page with horizontal tab menu for sub-sections",
+      "headerLayout": "standard",
+      "secondaryNav": "tab-bar-hub-sections",
+      "contentLayout": {
+        "pattern": "dynamic-sections",
+        "defaultSplit": "50-50"
+      },
+      "usage": "Hub pages with multiple internal sections (e.g., Features hub)"
+    },
+
+    "simple-text-page": {
+      "id": "simple-text-page",
+      "name": "Simple Text Page",
+      "description": "Single-column text content with optional sections",
+      "headerLayout": "standard",
+      "secondaryNav": "none",
+      "contentLayout": {
+        "pattern": "static",
+        "sectionLayout": "text-block"
+      },
+      "usage": "Privacy policy, terms of service, about pages"
+    },
+
+    "hero-with-features": {
+      "id": "hero-with-features",
+      "name": "Hero Banner + Feature Grid",
+      "description": "Large hero banner at top followed by feature grid",
+      "headerLayout": "hero-overlay-header",
+      "secondaryNav": "none",
+      "contentLayout": {
+        "pattern": "static",
+        "sections": [
+          {
+            "layout": "hero-overlay",
+            "order": 1
+          },
+          {
+            "layout": "feature-grid",
+            "order": 2,
+            "settings": {
+              "columns": 3
+            }
+          }
+        ]
+      },
+      "usage": "Landing pages, product showcases"
+    },
+
+    "form-page": {
+      "id": "form-page",
+      "name": "Form Page",
+      "description": "Page centered around a contact or data collection form",
+      "headerLayout": "minimal",
+      "secondaryNav": "none",
+      "contentLayout": {
+        "pattern": "static",
+        "sectionLayout": "form"
+      },
+      "usage": "Contact page, demo request, newsletter signup"
+    },
+
+    "gallery-page": {
+      "id": "gallery-page",
+      "name": "Gallery Page",
+      "description": "Image gallery with optional text sections",
+      "headerLayout": "standard",
+      "secondaryNav": "none",
+      "contentLayout": {
+        "pattern": "static",
+        "sectionLayout": "image-gallery"
+      },
+      "usage": "Client showcase, portfolio, photo galleries"
+    },
+
+    "spoke-with-left-sidebar": {
+      "id": "spoke-with-left-sidebar",
+      "name": "Spoke Page with Left Sidebar",
+      "description": "Spoke page with vertical left sidebar navigation",
+      "headerLayout": "minimal",
+      "secondaryNav": "sidebar-left",
+      "contentLayout": {
+        "pattern": "repeating-alternating",
+        "firstSide": "right",
+        "defaultSplit": "60-40",
+        "sectionLayout": "alternating-image"
+      },
+      "usage": "Documentation pages, knowledge base articles"
+    },
+
+    "custom-sections": {
+      "id": "custom-sections",
+      "name": "Custom Sections (Manual Control)",
+      "description": "Fully customizable page with manual section definitions",
+      "headerLayout": "standard",
+      "secondaryNav": "none",
+      "contentLayout": {
+        "pattern": "manual",
+        "note": "Requires explicit section definitions in page.json"
+      },
+      "usage": "Complex pages that don't fit standard patterns"
+    }
+  }
+}
