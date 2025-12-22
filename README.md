@@ -96,10 +96,39 @@ https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/_page-te
 https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/site/site_config.json
 
 
-## src files
+## src files (sample)
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/src/en/hub00/home.page.json
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/src/en/hub00/home.content.json
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/src/en/hub00/services.page.json
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/src/en/hub00/services.content.json
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/src/en/hub00/contact.page.json
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/src/en/hub00/contact.content.json
 
 
-## _dist files
+## _dist files (sample)
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/index.html
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/pages/services.html
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/pages/contact.html
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/_styles.css
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/scripts/_app.js
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/styles/content.css
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/styles/layout.css
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/styles/responsive.css
+
+https://raw.githubusercontent.com/Dlloyd0608/webly/refs/heads/main/_dist/styles/theme.css
+
+-end-
 
 
 
