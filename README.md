@@ -17,6 +17,33 @@ Static website builder app for multiple projects
 ---
 
 ## **II. Data Model & Configuration**
+## **III. User Roles & Workflows**
+## **IV. Application Modules**
+## **V. Build System Architecture**
+## **VI. Technology Stack**
+## **VII. Migration Path**
+## **VIII. Key Features by Phase**
+
+
+
+# webly
+Static website builder app for multiple projects
+
+## **I. System Overview**
+
+### A. Purpose & Vision
+- Meta-driven static site generator with CMS capabilities
+- Multi-project, multi-language, multi-user platform
+- Progression from file-based → database-driven → APEX-integrated
+
+### B. Core Architecture Principles
+- **Separation of Concerns**: Configuration, content, presentation, and build logic
+- **Hub-and-Spoke Navigation**: 3-level hierarchical structure
+- **Element-Based Content**: Modular, reusable content blocks
+- **Static Site Generation**: Pre-rendered HTML for performance and SEO
+
+
+## **II. Data Model & Configuration**
 
 ### A. Project Structure
 1. **Website Project** (`site_config.json`)
