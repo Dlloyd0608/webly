@@ -1,0 +1,57 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "b2b-factsheet",
+  "contentId": "b2b-factsheet_content",
+  "language": "en",
+  "hub": "hub01",
+  "author": "Technical Writer",
+  "blocks": {
+    "factsheet-layout": {
+      "elements": [
+        { "type": "title", "content": "Business to Business", "level": 1, "position": "header" }
+      ],
+      "columns": [
+        {
+          "subtitle": "FEATURE SUMMARY",
+          "elements": [
+            { "type": "title", "content": "General Design", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Customizable turn-key E-commerce Solutions; includes all B2C Features", "Public and Private Web Pages", "Group Messaging / Mass E-mails", "Flexible Supplier / Vendor Application Process", "Web Hosting 24x7 and Stand-alone Deployments"] },
+            
+            { "type": "title", "content": "Secure Partners", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Secured Member Access for Suppliers or Vendors", "Member Application Process and Forms", "Event Registration", "Membership Directory", "Rules and Policies"] },
+            
+            { "type": "title", "content": "Business Activities", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Calendar of Events", "On-Site Credit Card Processing", "Survey Management", "On-line Member Statements"] },
+
+            { "type": "title", "content": "Back-Office", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Secured Administration Access", "Member Management", "Membership Administration", "Website Administration and Statistics", "Content Management"] }
+          ]
+        },
+        {
+          "subtitle": "KEY FEATURES",
+          "elements": [
+            { "type": "title", "content": "Application Management", "level": 3 },
+            { "type": "paragraph", "content": "Self-serve application process for new suppliers or vendors with an on-line renewal process for existing members." },
+            
+            { "type": "title", "content": "Membership Directory", "level": 3 },
+            { "type": "paragraph", "content": "The Member directory includes all pertinent contact information and allows maintenance of the directory by administration." },
+            
+            { "type": "title", "content": "Member Message Board", "level": 3 },
+            { "type": "paragraph", "content": "This module allows members to view other member message postings, submit requests to the administrator, and receive e-mail notifications." },
+            
+            { "type": "title", "content": "Calendar of Events", "level": 3 },
+            { "type": "paragraph", "content": "Manage and extend a monthly calendar of events and activities. Visitors have the option of viewing the calendar by categories or event such as chambers, commerce meeting, or all events." },
+            
+            { "type": "title", "content": "Newsletters & Business News", "level": 3 },
+            { "type": "paragraph", "content": "Newsletters can be subscribed to as a monthly on-line communication. Important news articles highlighted on the home page." },
+            
+            { "type": "title", "content": "On-line Member Statements", "level": 3 },
+            { "type": "paragraph", "content": "Manage and settle Member monthly statements to include special purchases such as merchandise or tournament tickets within a consolidated statement." },
+            
+            { "type": "callToAction", "text": "View Demo", "targetId": "demo", "style": "primary" }
+          ]
+        }
+      ]
+    }
+  }
+}

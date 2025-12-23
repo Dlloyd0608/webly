@@ -1,0 +1,58 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "b2c",
+  "contentId": "b2c_content",
+  "language": "en",
+  "hub": "hub01",
+  "author": "Marketing Team",
+  "blocks": {
+    "overview": {
+      "elements": [
+        { "type": "title", "content": "Business to Consumer Overview", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "inPowerSuite incorporates all main and expected features of a fully functional e-commerce experience and provides easy fit for those companies wanting to leverage their web sites. Blending flexible shopping arrangements and real-time checkout processing into an existing web site is easy to implement. Customers can search your online catalog, select products and suggested items for their shopping cart, store payment and delivery addresses, and select from different shipping services." 
+        },
+        { "type": "media", "mediaType": "image", "src": "198008.jpg", "alt": "B2C Overview" }
+      ]
+    },
+    "webstore-catalog": {
+      "elements": [
+        { "type": "title", "content": "Web Store & Catalog Configurations", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Store Setup", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Real-time e-commerce plug-ins", "Member rewards integration", "Autoship Programs"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Catalog Features", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Multi-dimensional groupings", "Flexible Search Engine", "Unlimited Pricelists"] }
+          ]
+        }
+      ]
+    },
+    "key-features": {
+      "elements": [
+        { "type": "title", "content": "Back Office & Checkout", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Sales Operations", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Corporate Website Blending", "Up/Side-Sell suggestive selling", "Email Order Confirmation"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Payment Processing", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Real-time credit card plug-ins", "Major cards/checks/Point of Sale", "Mature PL/SQL code-base"] }
+          ]
+        }
+      ]
+    }
+  }
+}

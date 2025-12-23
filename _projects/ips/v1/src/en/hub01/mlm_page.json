@@ -1,0 +1,41 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "mlm",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Multi Level Marketing",
+    "subtitle": "MLM SOLUTIONS",
+    "description": "Complete MLM software solution with member management and commission tracking.",
+    "keywords": ["MLM", "genealogy", "commissions"]
+  },
+  "contentSources": ["mlm_content"],
+  "sections": [
+    {
+      "source": "mlm_content",
+      "contentBlock": "overview",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "mlm_content",
+      "contentBlock": "member-enrollment",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "mlm_content",
+      "contentBlock": "genealogy-commissions",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "mlm_content",
+      "contentBlock": "mlm-features",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    }
+  ]
+}

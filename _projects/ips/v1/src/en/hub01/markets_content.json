@@ -1,0 +1,56 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "markets",
+  "contentId": "markets_content",
+  "language": "en",
+  "hub": "hub01",
+  "author": "Marketing Team",
+  "blocks": {
+    "solutions-intro": {
+      "elements": [
+        { "type": "title", "content": "Our Solutions Work", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "Supporting multiple organizational configurations to include Multi Level Marketing and Party Plan verticals. Providing a global deployment platform that enables flexible and scalable web store solutions in multiple languages and currencies."
+        }
+      ]
+    },
+    "market-grid": {
+      "elements": [],
+      "panels": [
+        {
+          "title": "MULTI LEVEL MARKETING",
+          "elements": [
+            { "type": "paragraph", "content": "inPowerSuite offers an array of features aimed to deliver business tools and services that are ideally suited to assist Distributor based Multi-Level Marketing organizations." },
+            { "type": "paragraph", "content": "Organizations leverage inPowerSuite's Membership Management, E-Commerce, and Event Registration functions to increase operational efficiency and management of their members, orders, events, and site content." },
+            { "type": "callToAction", "text": "READ MORE >", "targetId": "mlm-factsheet" }
+          ]
+        },
+        {
+          "title": "PARTY PLAN",
+          "elements": [
+            { "type": "paragraph", "content": "Meeting the demands of Party Planners requires insight into the needs of the Consultants for self-serve order management on the Internet. Party and Hostess Rewards management has never been easier." },
+            { "type": "paragraph", "content": "inPowerSuite provides effective and powerful tools for you and your Consultants to take your organization to the next level of Direct Selling success!" },
+            { "type": "callToAction", "text": "READ MORE >", "targetId": "partyplan-factsheet" }
+          ]
+        },
+        {
+          "title": "BUSINESS TO BUSINESS",
+          "elements": [
+            { "type": "paragraph", "content": "Companies seeking to promote their products and services to other businesses via the Internet will benefit from inPowerSuite's robust e-commerce solution." },
+            { "type": "paragraph", "content": "inPowerSuite software is highly scalable and built to provide maximum flexibility for businesses who manage real-time inventories with multiple pricing configurations. Regardless of the size of your business, inPowerSuite provides core functions and features to collaborate with your suppliers and vendors on the web." },
+            { "type": "callToAction", "text": "READ MORE >", "targetId": "b2b-factsheet" }
+          ]
+        },
+        {
+          "title": "BUSINESS TO CONSUMER",
+          "elements": [
+            { "type": "paragraph", "content": "inPowerSuite incorporates all main and expected features of a fully functional e-commerce experience and provides easy fit for those companies wanting to leverage their web sites." },
+            { "type": "paragraph", "content": "Blending flexible shopping arrangements and real-time checkout processing into an existing web site is easy to implement. Customers can search your online catalog, select products and suggested items for their shopping cart, store payment and delivery addresses, and select from different shipping services." },
+            { "type": "callToAction", "text": "READ MORE >", "targetId": "b2c-factsheet" }
+          ]
+        }
+      ]
+    }
+  }
+}

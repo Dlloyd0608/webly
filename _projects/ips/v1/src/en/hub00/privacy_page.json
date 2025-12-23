@@ -1,0 +1,41 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "privacy",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Privacy Policy",
+    "subtitle": "PRIVACY STATEMENT",
+    "description": "Standard privacy statement for inPowerSuite and Niche Group regarding information gathering and security practices.",
+    "keywords": ["privacy policy", "data protection", "security"]
+  },
+  "contentSources": ["privacy_content"],
+  "sections": [
+    {
+      "source": "privacy_content",
+      "contentBlock": "intro",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "privacy_content",
+      "contentBlock": "data-collection",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "privacy_content",
+      "contentBlock": "cookies-and-security",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "privacy_content",
+      "contentBlock": "opt-out-and-updates",
+      "layout": "text-block",
+      "settings": {}
+    }
+  ]
+}

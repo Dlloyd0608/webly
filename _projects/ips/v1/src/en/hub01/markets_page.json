@@ -1,0 +1,29 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "markets",
+  "pageType": "hub",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Markets Overview",
+    "subtitle": "OUR SOLUTIONS WORK",
+    "description": "Multi-Level Marketing, Party Plan, B2B, and B2C solutions.",
+    "keywords": ["markets", "MLM", "grid"]
+  },
+  "contentSources": ["markets_content"],
+  "sections": [
+    {
+      "source": "markets_content",
+      "contentBlock": "solutions-intro",
+      "layout": "text-block",
+      "settings": { "customClass": "centered-intro-block" }
+    },
+    {
+      "source": "markets_content",
+      "contentBlock": "market-grid",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    }
+  ]
+}

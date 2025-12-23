@@ -1,0 +1,64 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "services",
+  "contentId": "services_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Marketing Team",
+  "blocks": {
+    "intro-header": {
+      "elements": [
+        { "type": "media", "mediaType": "image", "src": "website/ips_logo.png", "alt": "inPowerSuite Logo" },
+        { "type": "title", "content": "Services", "level": 1 },
+        { "type": "paragraph", "content": "INNOVATION EMPOWER SUCCESS" }
+      ]
+    },
+    "mobile-commerce": {
+      "elements": [
+        { "type": "title", "content": "Mobile Commerce", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "We can assess your current mobile properties and help you define and implement the cutting-edge mobile strategies and solutions that today's consumers demand." 
+        },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": ["Mobile Assessments", "Mobile Solution Design", "Hybrid, Native and Responsive Development"]
+        },
+        { "type": "media", "mediaType": "image", "src": "website/svce_mobile.jpg", "alt": "Mobile Commerce" }
+      ]
+    },
+    "ecommerce": {
+      "elements": [
+        { "type": "title", "content": "e-Commerce", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "We design, build & support highly scalable experiences optimized for all touch points in the omnichannel world." 
+        },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": ["Technology Roadmaps", "Customer Experience Design", "E-commerce Integration"]
+        },
+        { "type": "media", "mediaType": "image", "src": "website/svce_ecomm.jpg", "alt": "e-Commerce" }
+      ]
+    },
+    "b2b-solutions": {
+      "elements": [
+        { "type": "title", "content": "B2B Digital Solutions", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "We build applications and tools that optimize processes and enable employee communication." 
+        },
+        { "type": "media", "mediaType": "image", "src": "website/svce_b2b.jpg", "alt": "B2B Solutions" }
+      ]
+    },
+    "commerce-innovation": {
+      "elements": [
+        { "type": "title", "content": "Commerce Innovation", "level": 2 },
+        { "type": "paragraph", "content": "Delivering emerging shopping models for clients outside of standard eCommerce." },
+        { "type": "media", "mediaType": "image", "src": "website/svce_b2c.jpg", "alt": "Innovation" }
+      ]
+    }
+  }
+}

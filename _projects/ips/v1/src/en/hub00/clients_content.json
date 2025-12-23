@@ -1,0 +1,63 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "clients",
+  "contentId": "clients_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Marketing Team",
+  "blocks": {
+    "intro-overview": {
+      "elements": [
+        { "type": "title", "content": "Client Overview", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "inPowerSuite partners with leading companies around the globe to deliver scalable, flexible, and multilingual web-store solutions. Our clients span multiple industries, including direct sales, health & wellness, and consumer goods." 
+        }
+      ]
+    },
+    "featured-clients-split": {
+      "elements": [
+        { "type": "title", "content": "Featured Clients", "level": 2 },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": [
+            "**Direct Sales** – Genealogy tracking and commission management.",
+            "**B2C Brands** – Multi-currency online stores.",
+            "**Enterprise** – Integrations to ERP and CRM systems."
+          ]
+        },
+        { "type": "callToAction", "text": "View Testimonials", "targetId": "testimonials", "style": "primary" },
+        { "type": "media", "mediaType": "image", "src": "website/ips_clients.png", "alt": "Client Showcase" }
+      ]
+    },
+    "testimonials-prose": {
+      "elements": [
+        { "type": "title", "content": "What Our Clients Say", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "> \"inPowerSuite transformed our direct sales platform. The tools for enrollment and dashboards are unparalleled.\" – **Jane Doe, CEO** \n\n> \"Our B2C store runs smoothly, supporting multiple languages while integrating with fulfillment systems.\" – **John Smith, Ops Director**" 
+        }
+      ]
+    },
+    "industries-grid": {
+      "elements": [
+        { "type": "title", "content": "Sectors We Serve", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Direct Selling", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["MLM & Party Plan", "Retail & E-Commerce"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Corporate", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Health & Wellness", "Enterprise Solutions"] }
+          ]
+        }
+      ]
+    }
+  }
+}

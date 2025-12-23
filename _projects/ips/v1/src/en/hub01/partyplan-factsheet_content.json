@@ -1,0 +1,54 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "partyplan-factsheet",
+  "contentId": "partyplan-factsheet_content",
+  "language": "en",
+  "hub": "hub01",
+  "author": "Technical Writer",
+  "blocks": {
+    "factsheet-layout": {
+      "elements": [
+        { "type": "title", "content": "Party Plan", "level": 1, "position": "header" }
+      ],
+      "columns": [
+        {
+          "subtitle": "FEATURE SUMMARY",
+          "elements": [
+            { "type": "title", "content": "General Design", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Customizable turn-key E-commerce Solutions", "Corporate Website/E-commerce Blending", "Flexible Application Process", "Sponsor Member Relationships"] },
+            
+            { "type": "title", "content": "Application Sign-up", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Member Applications", "Product and Signup Bundling", "Sponsor Relationships", "Lead Protection"] },
+
+            { "type": "title", "content": "Back-Office", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Access to inPowerSuite Tools", "My Account/Business Center", "Commissions Reporting", "Virtual Website Signup"] },
+
+            { "type": "title", "content": "Party Stats", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Configurable party types, messaging, and ordering rules", "Party Calendar", "Track RSVPs, attendance, and future bookings"] }
+          ]
+        },
+        {
+          "subtitle": "KEY FEATURES",
+          "elements": [
+            { "type": "title", "content": "Corporate Website/E-commerce Blending", "level": 3 },
+            { "type": "paragraph", "content": "Supports ease of blending into an existing website, regardless of product or categories." },
+
+            { "type": "title", "content": "Flexible Application Sign-up Process", "level": 3 },
+            { "type": "paragraph", "content": "Provides multiple access points to the application sign-up process with product bundling." },
+
+            { "type": "title", "content": "Event Management", "level": 3 },
+            { "type": "paragraph", "content": "Supports ease of management of company or member sponsored events." },
+            
+            { "type": "title", "content": "Flexible Commission Plans", "level": 3 },
+            { "type": "paragraph", "content": "Supports set-up and configuration of multiple commission plans for formats including uni-level, binary, matrix, or stair-step breakaway with real-time calculations and robust reporting features." },
+
+            { "type": "title", "content": "Reward Programs", "level": 3 },
+            { "type": "paragraph", "content": "Provides parameters for controlling the hostesses/customer rewards qualifications and can be implemented as a frequency purchasing program for points redemption." },
+
+            { "type": "callToAction", "text": "View Demo", "targetId": "demo", "style": "primary" }
+          ]
+        }
+      ]
+    }
+  }
+}

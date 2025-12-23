@@ -1,0 +1,23 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "partyplan-factsheet",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Party Plan Factsheet",
+    "subtitle": "PARTY PLANNING SOFTWARE SOLUTIONS",
+    "description": "Detailed summary of party plan management, rewards, and back-office features.",
+    "keywords": ["party plan", "rewards", "consultant tools"]
+  },
+  "contentSources": ["partyplan-factsheet_content"],
+  "sections": [
+    {
+      "source": "partyplan-factsheet_content",
+      "contentBlock": "factsheet-layout",
+      "layout": "two-column-subtitles",
+      "settings": {}
+    }
+  ]
+}

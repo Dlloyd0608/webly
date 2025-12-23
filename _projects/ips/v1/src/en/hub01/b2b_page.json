@@ -1,0 +1,35 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "b2b",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Business to Business",
+    "subtitle": "B2B E-COMMERCE SOLUTIONS",
+    "description": "Scalable B2B e-commerce platform for supplier and vendor management.",
+    "keywords": ["B2B", "wholesale", "vendors", "suppliers"]
+  },
+  "contentSources": ["b2b_content"],
+  "sections": [
+    {
+      "source": "b2b_content",
+      "contentBlock": "overview",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "b2b_content",
+      "contentBlock": "general-partnership",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    },
+    {
+      "source": "b2b_content",
+      "contentBlock": "key-features",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "b2b",
+  "contentId": "b2b_content",
+  "language": "en",
+  "hub": "hub01",
+  "author": "Marketing Team",
+  "blocks": {
+    "overview": {
+      "elements": [
+        { "type": "title", "content": "Business to Business Overview", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "Companies seeking to promote their products and services to other businesses via the Internet will benefit from inPowerSuite's robust e-commerce solution. inPowerSuite software is highly scalable and built to provide maximum flexibility for businesses who manage real-time inventories with multiple pricing configurations. Regardless of the size of your business, inPowerSuite provides core functions and features to collaborate with your suppliers and vendors on the web." 
+        },
+        { "type": "media", "mediaType": "image", "src": "315864.jpg", "alt": "B2B Overview" }
+      ]
+    },
+    "general-partnership": {
+      "elements": [
+        { "type": "title", "content": "General & Partnership Features", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Feature Summary", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Customizable E-commerce", "Group Messaging", " Hosting 24x7"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Secure Membership", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Vendor Portals", "Financial Statements", "Rules & Policies"] }
+          ]
+        }
+      ]
+    },
+    "key-features": {
+      "elements": [
+        { "type": "title", "content": "Key Business Activities", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Management", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Membership Directory", "Calendar of Events", "Member statements"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Back-Office", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Secured Admin Access", "Survey Management", "Statistics"] }
+          ]
+        }
+      ]
+    }
+  }
+}

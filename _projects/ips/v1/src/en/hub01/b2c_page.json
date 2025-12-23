@@ -1,0 +1,35 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "b2c",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Business to Consumer",
+    "subtitle": "E-COMMERCE FOR END CUSTOMERS",
+    "description": "Full-featured B2C e-commerce platform with shopping cart and checkout processing.",
+    "keywords": ["B2C", "e-commerce", "shopping cart", "online store"]
+  },
+  "contentSources": ["b2c_content"],
+  "sections": [
+    {
+      "source": "b2c_content",
+      "contentBlock": "overview",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "b2c_content",
+      "contentBlock": "webstore-catalog",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    },
+    {
+      "source": "b2c_content",
+      "contentBlock": "key-features",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    }
+  ]
+}

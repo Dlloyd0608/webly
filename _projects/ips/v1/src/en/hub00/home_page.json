@@ -1,0 +1,53 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "home",
+  "pageType": "hub",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "inPowerSuite",
+    "subtitle": "",
+    "description": "Leading software platform for direct sales and MLM organizations.",
+    "keywords": ["inPowerSuite", "MLM", "direct sales", "e-commerce"]
+  },
+  "contentSources": ["home_content"],
+  "sections": [
+    {
+      "source": "home_content",
+      "contentBlock": "niche-group",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "home_content",
+      "contentBlock": "markets",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "home_content",
+      "contentBlock": "direct-sellers",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "home_content",
+      "contentBlock": "commerce",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "home_content",
+      "contentBlock": "features",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "home_content",
+      "contentBlock": "partners",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    }
+  ]
+}

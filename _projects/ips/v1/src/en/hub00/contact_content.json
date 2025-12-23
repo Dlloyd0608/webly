@@ -1,0 +1,51 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "contact",
+  "contentId": "contact_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Marketing Team",
+  "blocks": {
+    "intro": {
+      "elements": [
+        { "type": "title", "content": "Get In Touch", "level": 2 },
+        { "type": "paragraph", "content": "inPowerSuite provides multiple channels for support and partnership." }
+      ]
+    },
+    "contact-info": {
+      "elements": [
+        { "type": "title", "content": "Contact Information", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Main Office", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Phone: 1 (561) 893-9300", "Email: sales@nichegroup.com"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Resources", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Support Portal", "Office Directions"] }
+          ]
+        }
+      ]
+    },
+    "contact-form": {
+      "elements": [
+        {
+          "type": "form",
+          "title": "Online Contact Form",
+          "layout": "1-up",
+          "fields": [
+            { "name": "name", "label": "Your name (required)", "type": "text", "required": true, "size": "full" },
+            { "name": "email", "label": "Your e-mail (required)", "type": "email", "required": true, "size": "full" },
+            { "name": "message", "label": "Message", "type": "textarea", "required": false, "size": "full" }
+          ],
+          "submitButton": { "text": "Send a message", "style": "primary" },
+          "successMessage": "Thank you! We will respond within 24 hours."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "b2b-factsheet",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "B2B Factsheet",
+    "subtitle": "BUSINESS TO BUSINESS SOLUTIONS",
+    "description": "Technical summary of supplier management, membership directory, and back-office features.",
+    "keywords": ["B2B", "wholesale", "vendor management", "back-office"]
+  },
+  "contentSources": ["b2b-factsheet_content"],
+  "sections": [
+    {
+      "source": "b2b-factsheet_content",
+      "contentBlock": "factsheet-layout",
+      "layout": "two-column-subtitles",
+      "settings": {}
+    }
+  ]
+}

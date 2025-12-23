@@ -1,0 +1,35 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "contact",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Contact",
+    "subtitle": "GET IN TOUCH",
+    "description": "Contact inPowerSuite for support or inquiries.",
+    "keywords": ["contact", "support", "sales"]
+  },
+  "contentSources": ["contact_content"],
+  "sections": [
+    {
+      "source": "contact_content",
+      "contentBlock": "intro",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "contact_content",
+      "contentBlock": "contact-info",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    },
+    {
+      "source": "contact_content",
+      "contentBlock": "contact-form",
+      "layout": "form-1-up",
+      "settings": {}
+    }
+  ]
+}

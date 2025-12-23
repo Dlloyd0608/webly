@@ -1,0 +1,70 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "partyplan",
+  "contentId": "partyplan_content",
+  "language": "en",
+  "hub": "hub01",
+  "author": "Marketing Team",
+  "blocks": {
+    "overview": {
+      "elements": [
+        { "type": "title", "content": "Party Plan Overview", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "Meeting the demands of Party Planners requires insight into the needs of the Consultants for self-serve order management on the Internet. Party and Hostess Rewards management has never been easier. inPowerSuite provides effective and powerful tools for you and your Consultants to take your organization to the next level of Direct Selling success." 
+        }
+      ]
+    },
+    "party-setup": {
+      "elements": [
+        { "type": "title", "content": "Configurable Party Setup", "level": 2 },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": [
+            "Configurable party types, messaging, and ordering rules",
+            "Configurable rules for host dollars and 1/2 priced items",
+            "Configurable party auto-responders",
+            "Easy to manage party schedule"
+          ]
+        },
+        { "type": "media", "mediaType": "image", "src": "party-setup.png", "alt": "Configurable Party Setup" }
+      ]
+    },
+    "party-management": {
+      "elements": [
+        { "type": "title", "content": "Party Management and Fulfillment", "level": 2 },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": [
+            "Track RSVPs, attendance, and future bookings",
+            "Manage multiple order types: pre-party, party, rewards and settling order",
+            "Cash out earnings at the end of a Party",
+            "Ship directly to guests; or drop ship orders to the designated location"
+          ]
+        },
+        { "type": "media", "mediaType": "image", "src": "party-fulfillment.png", "alt": "Party Management and Fulfillment" }
+      ]
+    },
+    "partyplan-features": {
+      "elements": [
+        { "type": "title", "content": "Factsheet Feature Summary", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Party Plan Management", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Configurable ordering rules", "Easy to manage party schedule", "Consultant and host portals"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Websites & Hubs", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Uni-level and multi-level commissions", "Sales territory hierarchies", "Rolling operating calendars"] }
+          ]
+        }
+      ]
+    }
+  }
+}

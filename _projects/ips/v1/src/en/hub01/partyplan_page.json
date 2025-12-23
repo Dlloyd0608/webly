@@ -1,0 +1,41 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "partyplan",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Party Plan",
+    "subtitle": "PARTY PLANNING MADE EASY",
+    "description": "Comprehensive party plan software solution with host rewards and event management.",
+    "keywords": ["party plan", "host rewards", "events"]
+  },
+  "contentSources": ["partyplan_content"],
+  "sections": [
+    {
+      "source": "partyplan_content",
+      "contentBlock": "overview",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "partyplan_content",
+      "contentBlock": "party-setup",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "partyplan_content",
+      "contentBlock": "party-management",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "partyplan_content",
+      "contentBlock": "partyplan-features",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    }
+  ]
+}

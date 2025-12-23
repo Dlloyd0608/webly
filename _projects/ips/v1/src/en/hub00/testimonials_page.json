@@ -1,0 +1,41 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "testimonials",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Testimonials",
+    "subtitle": "CLIENT SUCCESS STORIES",
+    "description": "Read client feedback and success stories from businesses using inPowerSuite.",
+    "keywords": ["testimonials", "client success", "MLM feedback"]
+  },
+  "contentSources": ["testimonials_content"],
+  "sections": [
+    {
+      "source": "testimonials_content",
+      "contentBlock": "intro-overview",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "testimonials_content",
+      "contentBlock": "client-feedback-quotes",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "testimonials_content",
+      "contentBlock": "market-specific-quotes",
+      "layout": "grid-layout",
+      "settings": { "columns": 3 }
+    },
+    {
+      "source": "testimonials_content",
+      "contentBlock": "recommendation-reasons",
+      "layout": "grid-layout",
+      "settings": { "columns": 4 }
+    }
+  ]
+}

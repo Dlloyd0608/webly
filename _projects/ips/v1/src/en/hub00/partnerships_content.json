@@ -1,0 +1,78 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "partnerships",
+  "contentId": "partnerships_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Marketing Team",
+  "blocks": {
+    "intro": {
+      "elements": [
+        { 
+          "type": "paragraph", 
+          "content": "inPowerSuite works closely with a variety of partners to extend the reach of our web-store solutions and provide added value to clients. Our partnerships support technology integration, reselling, and collaborative innovation." 
+        }
+      ]
+    },
+    "technology-partners": {
+      "elements": [
+        { "type": "title", "content": "Technology Partners", "level": 2 },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": [
+            "Integration with CRM, ERP, and payment processors",
+            "API support for seamless connectivity",
+            "Joint development for specialized solutions"
+          ]
+        },
+        { "type": "media", "mediaType": "image", "src": "technology-partners.png", "alt": "Technology Partners" }
+      ]
+    },
+    "reseller-partnerships": {
+      "elements": [
+        { "type": "title", "content": "Reseller Partnerships", "level": 2 },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": [
+            "Authorized resellers for MLM and B2C platforms",
+            "Co-branded offerings for local markets",
+            "Training and support for reseller teams"
+          ]
+        },
+        { "type": "media", "mediaType": "image", "src": "reseller-partners.png", "alt": "Reseller Partnerships" }
+      ]
+    },
+    "strategic-alliances": {
+      "elements": [
+        { "type": "title", "content": "Strategic Alliances", "level": 2 },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": [
+            "Collaboration with industry leaders to enhance solutions",
+            "Joint marketing initiatives",
+            "Innovation and development partnerships"
+          ]
+        },
+        { "type": "media", "mediaType": "image", "src": "strategic-alliances.png", "alt": "Strategic Alliances" }
+      ]
+    },
+    "partnership-benefits": {
+      "elements": [
+        { "type": "title", "content": "Benefits of Partnering", "level": 2 },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": [
+            "Access to inPowerSuite technology stack",
+            "Dedicated support and resources",
+            "Revenue opportunities through joint offerings"
+          ]
+        },
+        { "type": "media", "mediaType": "image", "src": "partnership-benefits.png", "alt": "Partnership Benefits" }
+      ]
+    }
+  }
+}

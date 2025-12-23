@@ -1,0 +1,42 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "privacy",
+  "contentId": "privacy_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Legal Team",
+  "blocks": {
+    "intro": {
+      "elements": [
+        { "type": "title", "content": "inPowerSuite Privacy Statement:", "level": 2 },
+        { "type": "paragraph", "content": "NICHE GROUP has created this privacy statement (\"Statement\") in order to demonstrate our commitment to customer privacy. Privacy on the inPowerSuite.com web site (the \"Site\") is of great importance to us. Because we gather important information from our visitors and customers, we have established this Statement as a means to communicate our information gathering and dissemination practices." }
+      ]
+    },
+    "data-collection": {
+      "elements": [
+        { "type": "title", "content": "Collected Information:", "level": 2 },
+        { "type": "paragraph", "content": "We require customers who register to use the services offered on our Site (collectively, the \"Service\") to give us contact information, such as their name, company name, address, phone number, and e-mail address, and financial qualification and billing information, such as billing name and address, credit card number, and the number of users within the organization that will be using the Service. At the time you express interest in obtaining additional information, or when you register for the Service, we may also ask for additional personal information, such as title, department name, fax number, or additional company information, such as annual revenues, number of employees, or industry." },
+        { "type": "paragraph", "content": "Niche Group uses the information that we collect to set up the Service for individuals and their organizations. We may also use the information to contact customers to further discuss customer interest in our company, the Service that we provide, and to send information regarding our company or partners, such as promotions and events. Customer email addresses and any personal customer information will not be distributed or shared with third parties. Customers can opt out of receiving any communication by emailing privacy@inpowersuite.com." },
+        { "type": "paragraph", "content": "Except as we explicitly state at the time we request information, or as provided for in the NICHE GROUP Software Service Agreement, we do not disclose to third parties the information provided. All financial and billing information that we collect through the Site is used solely to check the qualifications of prospective customers and to bill for the Service." }
+      ]
+    },
+    "cookies-and-security": {
+      "elements": [
+        { "type": "title", "content": "Cookies and Usage Analysis:", "level": 2 },
+        { "type": "paragraph", "content": "We use the information we collect to maintain and improve the technical operation of the Site. Cookies are files that Web browsers place on a computer’s hard drive and are used to tell us whether customers and visitors have visited the Site previously. NICHE GROUP uses session cookies containing encrypted information to allow the system to uniquely identify you while you are logged in. This information allows NICHE GROUP to process your online transactions and requests." },
+        { "type": "title", "content": "Third-Party Sites & Security:", "level": 2 },
+        { "type": "paragraph", "content": "The Site contains links to other web sites. NICHE GROUP is not responsible for the privacy practices or the content of these other web sites. Our Site has security measures in place to help protect against the loss, misuse, and alteration of the Data under our control. Secure Socket Layer (SSL) technology protects information using both server authentication and data encryption to help ensure that Data is safe and available only to you." }
+      ]
+    },
+    "opt-out-and-updates": {
+      "elements": [
+        { "type": "title", "content": "Opt-Out Policy:", "level": 2 },
+        { "type": "paragraph", "content": "NICHE GROUP offers its visitors and customers a means to choose how we may use information provided. If you change your mind about receiving information from us, simply send your request to support@nichegroup.com." },
+        { "type": "title", "content": "Correcting & Updating Your Information:", "level": 2 },
+        { "type": "paragraph", "content": "If customers need to update or change registration information they may do so by editing the user or organization record. To update billing information please email support@inpowersuite.com or call 561-893-9300. NICHE GROUP will respond to your correction or update request within at most 30 days from the date of your request." },
+        { "type": "title", "content": "Additional Information:", "level": 2 },
+        { "type": "paragraph", "content": "Questions regarding this Statement or the practices of this Site should be directed to NICHE GROUP's Security Administrator by e-mailing privacy@inpowersuite.com or by mail to NICHE Group, Inc., 2255 Glades Road, Suite 324 Atrium, Boca Raton, FL, 33431." }
+      ]
+    }
+  }
+}

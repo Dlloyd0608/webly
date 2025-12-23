@@ -1,0 +1,23 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "mlm-factsheet",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "MLM Factsheet",
+    "subtitle": "MULTI LEVEL MARKETING",
+    "description": "Detailed features and technical summary for the MLM platform.",
+    "keywords": ["MLM", "factsheet", "technical features"]
+  },
+  "contentSources": ["mlm-factsheet_content"],
+  "sections": [
+    {
+      "source": "mlm-factsheet_content",
+      "contentBlock": "factsheet-layout",
+      "layout": "two-column-subtitles",
+      "settings": {}
+    }
+  ]
+}

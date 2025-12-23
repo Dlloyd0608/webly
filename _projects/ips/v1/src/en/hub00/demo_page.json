@@ -1,0 +1,41 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "demo",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Demo",
+    "subtitle": "INNOVATION EMPOWERMENT SUCCESS",
+    "description": "Live demonstrations of the inPowerSuite platform for MLM, B2C, and enterprise operations.",
+    "keywords": ["live demo", "platform showcase", "software walkthrough"]
+  },
+  "contentSources": ["demo_content"],
+  "sections": [
+    {
+      "source": "demo_content",
+      "contentBlock": "intro-text",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "demo_content",
+      "contentBlock": "demo-benefits-grid",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    },
+    {
+      "source": "demo_content",
+      "contentBlock": "organizational-receiving-grid",
+      "layout": "grid-layout",
+      "settings": { "columns": 1 }
+    },
+    {
+      "source": "demo_content",
+      "contentBlock": "demo-request-form-block",
+      "layout": "form-2-up",
+      "settings": {}
+    }
+  ]
+}

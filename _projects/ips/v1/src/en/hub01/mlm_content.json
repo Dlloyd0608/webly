@@ -1,0 +1,75 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "mlm",
+  "contentId": "mlm_content",
+  "language": "en",
+  "hub": "hub01",
+  "author": "Marketing Team",
+  "blocks": {
+    "overview": {
+      "elements": [
+        { "type": "title", "content": "Overview", "level": 2 },
+        { "type": "paragraph", "content": "inPowerSuite provides a complete suite of tools for Multi-Level Marketing organizations to manage members, commissions, and operations efficiently." }
+      ]
+    },
+    "member-enrollment": {
+      "elements": [
+        { "type": "title", "content": "Member Enrollment", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "inPowerSuite® provides a comprehensive and customizable member enrollment module for self-serve and up-line initiated new member sign-ups." 
+        },
+        {
+          "type": "list",
+          "style": "checkmark",
+          "items": [
+            "Customizable fields for new members",
+            "Sponsor lookup and assignment",
+            "Enrollment kits and product bundles",
+            "Integration with payment processing"
+          ]
+        },
+        { "type": "media", "mediaType": "image", "src": "mlm-enrollment.png", "alt": "Member Enrollment Process" }
+      ]
+    },
+    "genealogy-commissions": {
+      "elements": [
+        { "type": "title", "content": "Genealogy and Commissions", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "Track team performance with real-time tracking of team hierarchy and graphical genealogy views." 
+        },
+        {
+          "type": "list",
+          "style": "bullets",
+          "items": [
+            "Real-time genealogy charts",
+            "Commission statements and reporting",
+            "Historical performance tracking",
+            "Multi-level commission calculation"
+          ]
+        },
+        { "type": "media", "mediaType": "image", "src": "genealogy.png", "alt": "Genealogy and Commission Tracking" }
+      ]
+    },
+    "mlm-features": {
+      "elements": [
+        { "type": "title", "content": "MLM Features Summary", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "General Design", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Corporate Website Blending", "Flexible Application Process"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Systems", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Flexible Commission Plans", "Fast Start Commissions"] }
+          ]
+        }
+      ]
+    }
+  }
+}

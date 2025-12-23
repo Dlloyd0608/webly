@@ -1,0 +1,49 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "services",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Services",
+    "subtitle": "INNOVATION EMPOWER SUCCESS",
+    "description": "Assess and implement mobile strategies and omnichannel e-commerce experiences.",
+    "keywords": ["services", "mobile commerce", "digital solutions"]
+  },
+  "contentSources": ["services_content"],
+  "sections": [
+    {
+      "source": "services_content",
+      "contentBlock": "intro-header",
+      "layout": "text-block",
+      "settings": {
+        "customClass": "centered-intro-block"
+      }
+    },
+    {
+      "source": "services_content",
+      "contentBlock": "mobile-commerce",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "services_content",
+      "contentBlock": "ecommerce",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "services_content",
+      "contentBlock": "b2b-solutions",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "services_content",
+      "contentBlock": "commerce-innovation",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    }
+  ]
+}

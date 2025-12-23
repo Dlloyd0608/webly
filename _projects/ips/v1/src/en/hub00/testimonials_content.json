@@ -1,0 +1,64 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "testimonials",
+  "contentId": "testimonials_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Marketing Team",
+  "blocks": {
+    "intro-overview": {
+      "elements": [
+        { "type": "title", "content": "Overview", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "inPowerSuite is proud to partner with businesses worldwide. Our clients share their experiences, demonstrating the value, reliability, and impact of our platform." 
+        }
+      ]
+    },
+    "client-feedback-quotes": {
+      "elements": [
+        { "type": "title", "content": "Client Feedback", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "> \"inPowerSuite completely transformed our direct sales operations. The dashboards and commission tools are intuitive and powerful.\" – **Sarah Lee, CEO** \n\n> \"The multi-currency and multi-language support made our global expansion seamless. inPowerSuite is a game-changer.\" – **Ahmed Khan, Operations Director**" 
+        }
+      ]
+    },
+    "market-specific-quotes": {
+      "elements": [
+        { "type": "title", "content": "Success by Market", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Direct Selling", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Genealogy tracking success", "Back-office member tools"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "B2C E-commerce", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Multi-language support", "Catalog management"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Enterprise", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["ERP/CRM integration", "Reliable scalability"] }
+          ]
+        }
+      ]
+    },
+    "recommendation-reasons": {
+      "elements": [
+        { "type": "title", "content": "Why Clients Recommend Us", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        { "elements": [{ "type": "title", "content": "Reliable", "level": 3 }, { "type": "paragraph", "content": "Robust core features" }] },
+        { "elements": [{ "type": "title", "content": "Scalable", "level": 3 }, { "type": "paragraph", "content": "Global operations ready" }] },
+        { "elements": [{ "type": "title", "content": "Supportive", "level": 3 }, { "type": "paragraph", "content": "Top-notch training" }] },
+        { "elements": [{ "type": "title", "content": "Seamless", "level": 3 }, { "type": "paragraph", "content": "Tool integration" }] }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "b2c-factsheet",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub01",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "B2C Factsheet",
+    "subtitle": "BUSINESS TO CONSUMER SOLUTIONS",
+    "description": "Technical summary of web store, catalog, and checkout features for B2C e-commerce.",
+    "keywords": ["B2C", "e-commerce", "catalog", "checkout"]
+  },
+  "contentSources": ["b2c-factsheet_content"],
+  "sections": [
+    {
+      "source": "b2c-factsheet_content",
+      "contentBlock": "factsheet-layout",
+      "layout": "two-column-subtitles",
+      "settings": {}
+    }
+  ]
+}

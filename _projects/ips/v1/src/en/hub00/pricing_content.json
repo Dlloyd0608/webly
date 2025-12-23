@@ -1,0 +1,69 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "pricing",
+  "contentId": "pricing_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Marketing Team",
+  "blocks": {
+    "intro-pricing": {
+      "elements": [
+        { 
+          "type": "paragraph", 
+          "content": "Sign-up for inPowerSuite and benefit from modular based pricing according to features required and access mode of operation. Pricing is based on modular features desired and bundled feature pricing is available." 
+        }
+      ]
+    },
+    "modes-of-operation": {
+      "elements": [
+        { "type": "title", "content": "MODES OF OPERATION INCLUDE", "level": 2 },
+        { 
+          "type": "paragraph", 
+          "content": "- **Hosted Services**: internet hosted solution free from hardware maintenance burden.\n- **Client Site**: installed at client infrastructure with in-house technical personnel." 
+        }
+      ]
+    },
+    "pricing-tiers": {
+      "elements": [
+        { "type": "title", "content": "Pricing Options", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "HOSTED SERVICES", "level": 3 },
+            { 
+              "type": "list", 
+              "style": "checkmark", 
+              "items": [
+                "Basic - 2 users/100 items",
+                "Professional - 5 users/Marketing Campaigns",
+                "Advanced - Unlimited items/multi-language"
+              ] 
+            }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "CLIENT LICENSED", "level": 3 },
+            { 
+              "type": "list", 
+              "style": "checkmark", 
+              "items": [
+                "Standard - single store",
+                "Corporate - multi-currency/Financials",
+                "Enterprise - ERP E-Business integration"
+              ] 
+            }
+          ]
+        }
+      ]
+    },
+    "pricing-cta": {
+      "elements": [
+        { "type": "paragraph", "content": "Sign up for a demo or email Sales for a price list breakdown." },
+        { "type": "callToAction", "text": "Sign up for a demo", "targetId": "demo", "style": "primary" },
+        { "type": "callToAction", "text": "Email Sales", "targetId": "contact", "style": "secondary" }
+      ]
+    }
+  }
+}

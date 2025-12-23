@@ -1,0 +1,75 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "demo",
+  "contentId": "demo_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Marketing Team",
+  "blocks": {
+    "intro-text": {
+      "elements": [
+        { 
+          "type": "paragraph", 
+          "content": "inPowerSuite offers live demos for prospective clients to experience the full functionality of our platform. Our demos showcase the capabilities of our MLM, B2C, and enterprise solutions." 
+        }
+      ]
+    },
+    "demo-benefits-grid": {
+      "elements": [
+        { "type": "title", "content": "Live Platform Showcase", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "What You Will See", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["KPI Tracking Dashboards", "Member enrollment flows", "Genealogy tools"] }
+          ]
+        },
+        {
+          "elements": [
+            { "type": "title", "content": "Tailored Benefits", "level": 3 },
+            { "type": "list", "style": "checkmark", "items": ["Firsthand platform experience", "Solution tailoring analysis", "Direct access to specialists"] }
+          ]
+        }
+      ]
+    },
+    "organizational-receiving-grid": {
+      "panels": [
+        {
+          "elements": [
+            { "type": "title", "content": "Sign Up and You Will Receive", "level": 2 },
+            { 
+              "type": "list", 
+              "style": "checkmark", 
+              "items": [
+                "Dedicated Sales Rep for analysis",
+                "Configuration checklists",
+                "Functional User Manuals",
+                "Conversion workbooks",
+                "Site Administration access"
+              ] 
+            }
+          ]
+        }
+      ]
+    },
+    "demo-request-form-block": {
+      "elements": [
+        {
+          "type": "form",
+          "title": "Request a Demo",
+          "layout": "2-up",
+          "fields": [
+            { "name": "firstName", "label": "First Name", "type": "text", "required": true, "size": "half" },
+            { "name": "lastName", "label": "Last Name", "type": "text", "required": true, "size": "half" },
+            { "name": "email", "label": "Email Address", "type": "email", "required": true, "size": "half" },
+            { "name": "phone", "label": "Phone", "type": "tel", "required": true, "size": "half" },
+            { "name": "additionalInfo", "label": "Additional Needs", "type": "textarea", "required": false, "size": "full" }
+          ],
+          "submitButton": { "text": "Submit Request", "style": "primary" },
+          "successMessage": "Thank you! We will contact you to schedule your live demo."
+        }
+      ]
+    }
+  }
+}

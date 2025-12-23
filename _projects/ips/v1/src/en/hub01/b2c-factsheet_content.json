@@ -1,0 +1,48 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "b2c-factsheet",
+  "contentId": "b2c-factsheet_content",
+  "language": "en",
+  "hub": "hub01",
+  "author": "Technical Writer",
+  "blocks": {
+    "factsheet-layout": {
+      "elements": [
+        { "type": "title", "content": "Business to Consumer", "level": 1, "position": "header" }
+      ],
+      "columns": [
+        {
+          "subtitle": "FEATURE SUMMARY",
+          "elements": [
+            { "type": "title", "content": "Web Store Configurations", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Real-time e-commerce plug-ins and website blending", "Integrated stand-alone or shared catalog", "Multiple physical or logical Warehouses"] },
+            
+            { "type": "title", "content": "Catalogue Configurations", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Category hierarchies and listings", "Multi-dimensional product groupings", "Flexible Search Engine by keywords and items", "Up / Side / Substitute-Sells", "Advanced Pricing and Discounting Scenarios"] },
+            
+            { "type": "title", "content": "Back Office Management", "level": 3 },
+            { "type": "list", "style": "bullets", "items": ["Unlimited Companies and web stores", "Unlimited currencies, languages and labels", "Unlimited catalog items, memberships, events"] }
+          ]
+        },
+        {
+          "subtitle": "KEY FEATURES",
+          "elements": [
+            { "type": "title", "content": "Corporate Website/E-commerce Blending", "level": 3 },
+            { "type": "paragraph", "content": "Supports ease of blending into an existing website, regardless of product or categories. Product pages can be produced in real-time, from the database or from catalog brochures." },
+            
+            { "type": "title", "content": "Basic Product / Keyword Search", "level": 3 },
+            { "type": "paragraph", "content": "Supports exact and fuzzy matching against product descriptions and keywords to dynamically generate lists of all qualified items from the store catalog." },
+            
+            { "type": "title", "content": "Efficient Internet Based Payment Processing", "level": 3 },
+            { "type": "paragraph", "content": "inPowerSuite comes with integrated plug-ins for secured, internet-based, and real-time credit card transaction processing. Payment Methods include Major Credit Cards, Debit Cards, and Checks." },
+            
+            { "type": "title", "content": "Order Tracking", "level": 3 },
+            { "type": "paragraph", "content": "Provides ability for returning customers to view order status or to obtain parcel-tracking information." },
+            
+            { "type": "callToAction", "text": "View Demo", "targetId": "demo", "style": "primary" }
+          ]
+        }
+      ]
+    }
+  }
+}

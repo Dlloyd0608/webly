@@ -1,0 +1,172 @@
+{
+    "siteId": "inpowersuite",
+    "pageId": "mlm-factsheet",
+    "contentId": "mlm-factsheet_content",
+    "language": "en",
+    "hub": "hub01",
+    "author": "Technical Writer",
+    "blocks": {
+        "factsheet-layout": {
+            "elements": [
+                {
+                    "type": "title",
+                    "content": "Multi Level Marketing",
+                    "level": 1,
+                    "position": "header"
+                }
+            ],
+            "columns": [
+                {
+                    "subtitle": "FEATURE SUMMARY",
+                    "elements": [
+                        {
+                            "type": "title",
+                            "content": "General Design",
+                            "level": 3
+                        },
+                        {
+                            "type": "list",
+                            "style": "bullets",
+                            "items": [
+                                "Customizable turn-key E-commerce Solutions; includes **all B2C Features**",
+                                "Corporate Website/E-commerce Blending",
+                                "Flexible Application Process",
+                                "Event Management",
+                                "Sponsor Member Relationships",
+                                "Flexible Commission Plans",
+                                "Member Websites and Back Office",
+                                "Campaign Management",
+                                "Multiple physical or logical Warehouses",
+                                "Website Hosting"
+                            ]
+                        },
+                        {
+                            "type": "title",
+                            "content": "Application Sign-up",
+                            "level": 3
+                        },
+                        {
+                            "type": "list",
+                            "style": "bullets",
+                            "items": [
+                                "Member Applications",
+                                "Membner Types and Attributes",
+                                "Signup by Product Types",
+                                "Product and Signup Bundling",
+                                "Sponsship Relations",
+                                "Lead Protection",
+                                "Sponsor Search Feature"
+                            ]
+                        },
+                        {
+                            "type": "title",
+                            "content": "Back-Office",
+                            "level": 3
+                        },
+                        {
+                            "type": "list",
+                            "style": "bullets",
+                            "items": [
+                                "Access to inPowerSuite Tools",
+                                "My Account Area",
+                                "Update Customer Information",
+                                "Enroll New Members",
+                                "Manage Virtual Website",
+                                "Commissions Reporting"
+                            ]
+                        },
+                        {
+                            "type": "title",
+                            "content": "Multi-Level Marketng",
+                            "level": 3
+                        },
+                        {
+                            "type": "list",
+                            "style": "bullets",
+                            "items": [
+                                "Preferred Customer Types",
+                                "SUDO Ordering",
+                                "Autpship Programs",
+                                "Fund Raisers",
+                                "Electric Gift Certificates",
+                                "Back-Office Businesss Tools",
+                                "Customer Management",
+                                "Volume and Commission Reporting",
+                                "Distributir Websites and Site Locator",
+                                "Business Collateral Area",
+                                "Consignment abd Owned Warehouses ",
+                                "Email Campaigns"
+                            ]
+                        },
+                        {
+                            "type": "title",
+                            "content": "Commissons",
+                            "level": 3
+                        },
+                        {
+                            "type": "list",
+                            "style": "bullets",
+                            "items": [
+                                "Commission Plan Management",
+                                "Point/Volume Order Detail",
+                                "Fast Start Commisisons",
+                                "Flexible Plan Parameters",
+                                "Graphical and Linear Genealogy Trees",
+                                "bacj-Office Commission Reporting",
+                                "Claw-backs in Commission Period",
+                                "Back-Office Signup Process"
+                            ]
+                        },
+                        {
+                            "type": "title",
+                            "content": "Member Websites",
+                            "level": 3
+                        },
+                        {
+                            "type": "list",
+                            "style": "bullets",
+                            "items": [
+                                "Templated Designs",
+                                "Photos, Story, and Testimonials",
+                                "Standard Order Processing",
+                                "Lead Protection on Recruitment",
+                                "Company Area fro Events and Training",
+                                "Corporate Color Schemes",
+                                "Domain and Support Services"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subtitle": "KEY FEATURES",
+                    "elements": [
+                        {
+                            "type": "paragraph",
+                            "content": "Corporate Office and Commerce Blending: Supports ease of blending into an existing website, regardless of product or categories."
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": "Flexible Application Sign-up Process: Provides multiple access points to the application sign-up process with product bundling."
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": "Referring Customer Relationships: Provides lead protection and fast start payout potential for the enrollment and recruiting process."
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": "Flexible Commission Plans: Supports set-up and configuration of multiple commission plans for formats including uni-level, binary, matrix, or stair-step breakaway with real-time calculations."
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": "Reward Programs: Provides parameters for controlling the hostesses/customer rewards qualifications and can be implemented as a frequency purchasing program for points redemption."
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": "Distributor Websites and Back Office: Using highly sophisticated techniques, members can be offered Distributor websites, which are controlled by guidelines, parameters and approval of the Company."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

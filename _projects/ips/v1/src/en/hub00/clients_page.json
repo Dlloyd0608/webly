@@ -1,0 +1,41 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "clients",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Clients",
+    "subtitle": "INPOWERSUITE USED BY SOME OF THE WORLD'S BEST BRANDS",
+    "description": "Explore the leading companies worldwide that leverage inPowerSuite for direct sales and e-commerce.",
+    "keywords": ["clients", "partners", "brands", "industries"]
+  },
+  "contentSources": ["clients_content"],
+  "sections": [
+    {
+      "source": "clients_content",
+      "contentBlock": "intro-overview",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "clients_content",
+      "contentBlock": "featured-clients-split",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "clients_content",
+      "contentBlock": "testimonials-prose",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "clients_content",
+      "contentBlock": "industries-grid",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    }
+  ]
+}

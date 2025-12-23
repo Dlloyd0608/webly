@@ -1,0 +1,47 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "partnerships",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Partnerships",
+    "subtitle": "COLLABORATE AND GROW",
+    "description": "Collaborate with inPowerSuite through technology, reseller, and strategic partnerships.",
+    "keywords": ["partnerships", "resellers", "technology partners"]
+  },
+  "contentSources": ["partnerships_content"],
+  "sections": [
+    {
+      "source": "partnerships_content",
+      "contentBlock": "intro",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "partnerships_content",
+      "contentBlock": "technology-partners",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "partnerships_content",
+      "contentBlock": "reseller-partnerships",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    },
+    {
+      "source": "partnerships_content",
+      "contentBlock": "strategic-alliances",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "right" }
+    },
+    {
+      "source": "partnerships_content",
+      "contentBlock": "partnership-benefits",
+      "layout": "split-layout",
+      "settings": { "mediaSide": "left" }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "home",
+  "contentId": "home_content",
+  "language": "en",
+  "hub": "hub00",
+  "author": "Marketing Team",
+  "blocks": {
+    "niche-group": {
+      "elements": [
+        { "type": "media", "mediaType": "image", "src": "website/niche_award_2017.png", "alt": "2017 Award" },
+        { "type": "media", "mediaType": "image", "src": "website/niche_award_2020.png", "alt": "2020 Award" },
+        { "type": "title", "content": "Niche Group", "level": 2 },
+        { "type": "paragraph", "content": "Recipient of 2017 & 2020 Programming Awards." },
+        { "type": "callToAction", "text": "LEARN MORE", "targetId": "demo", "style": "primary" }
+      ]
+    },
+    "markets": {
+      "elements": [
+        { "type": "title", "content": "Markets", "level": 2 },
+        { "type": "paragraph", "content": "**INNOVATION, EMPOWERMENT, SUCCESS**" },
+        { "type": "media", "mediaType": "image", "src": "website/sky_globe.jpg", "alt": "Global" },
+        { "type": "callToAction", "text": "LEARN MORE", "targetId": "markets", "style": "primary" }
+      ]
+    },
+    "direct-sellers": {
+      "elements": [
+        { "type": "media", "mediaType": "image", "src": "website/ico_direct_seller.png", "alt": "Sellers" },
+        { "type": "title", "content": "Direct Sellers", "level": 2 },
+        { "type": "paragraph", "content": "inPowerSuite supports Multi-Level Marketing and Party Plan verticals." },
+        { "type": "callToAction", "text": "LEARN MORE", "targetId": "features", "style": "primary" }
+      ]
+    },
+    "commerce": {
+      "elements": [
+        { "type": "title", "content": "Commerce", "level": 2 },
+        { "type": "paragraph", "content": "Flexible web-store solutions in multiple languages and currencies." },
+        { "type": "media", "mediaType": "image", "src": "website/ico_commerce.png", "alt": "Commerce" },
+        { "type": "callToAction", "text": "LEARN MORE", "targetId": "features", "style": "primary" }
+      ]
+    },
+    "inpower-people": {
+      "elements": [
+        { "type": "media", "mediaType": "image", "src": "website/ips_clients.png", "alt": "People" },
+        { "type": "title", "content": "inPower Your People", "level": 2 },
+        { "type": "paragraph", "content": "inPowerSuite empowers Sales People to be their best." }
+      ]
+    },
+    "tools": {
+      "elements": [
+        { "type": "title", "content": "inPowerSuite Tools", "level": 2 },
+        { "type": "paragraph", "content": "Experience a robust, full-function business center for all active members." },
+        { "type": "media", "mediaType": "image", "src": "website/ico_app_manager.png", "alt": "Tools" }
+      ]
+    },
+    "features-grid": {
+      "elements": [
+        { "type": "title", "content": "inPowerSuite Software Modules", "level": 2, "position": "header" }
+      ],
+      "panels": [
+        {
+          "title": "IPS Frontend",
+          "elements": [
+            { "type": "list", "style": "bullets", "items": ["Web Store", "Replicated Websites", "Member Enrollment"] }
+          ]
+        },
+        {
+          "title": "IPS Back-office",
+          "elements": [
+            { "type": "list", "style": "bullets", "items": ["Customer Management", "Commissions", "Fulfillment Management"] }
+          ]
+        },
+        {
+          "title": "3rd Party",
+          "elements": [
+            { "type": "list", "style": "bullets", "items": ["SalesTax Gateways", "Payment Gateways", "Accounting (ERP)"] }
+          ]
+        },
+        {
+          "title": "Add-Ons & Integrations",
+          "elements": [
+            { "type": "list", "style": "bullets", "items": ["Lead Manager", "Content Library", "Email Manager"] }
+          ]
+        }
+      ]
+    }
+  }
+}

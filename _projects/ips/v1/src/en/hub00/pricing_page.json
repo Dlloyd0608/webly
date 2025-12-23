@@ -1,0 +1,41 @@
+{
+  "siteId": "inpowersuite",
+  "pageId": "pricing",
+  "pageType": "spoke",
+  "language": "en",
+  "hub": "hub00",
+  "pageTemplate": "custom-sections",
+  "metadata": {
+    "title": "Pricing",
+    "subtitle": "GET THE SOLUTIONS YOU NEED TODAY",
+    "description": "Modular pricing and mode of operation options for inPowerSuite.",
+    "keywords": ["pricing", "hosted services", "software license"]
+  },
+  "contentSources": ["pricing_content"],
+  "sections": [
+    {
+      "source": "pricing_content",
+      "contentBlock": "intro-pricing",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "pricing_content",
+      "contentBlock": "modes-of-operation",
+      "layout": "text-block",
+      "settings": {}
+    },
+    {
+      "source": "pricing_content",
+      "contentBlock": "pricing-tiers",
+      "layout": "grid-layout",
+      "settings": { "columns": 2 }
+    },
+    {
+      "source": "pricing_content",
+      "contentBlock": "pricing-cta",
+      "layout": "text-block",
+      "settings": {}
+    }
+  ]
+}
