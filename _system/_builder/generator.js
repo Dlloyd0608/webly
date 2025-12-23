@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// ./buildr/generator.js
+// ./_system/_buildr/generator.js
 // Main build script for WebGen Phase - 1
 // Corrected Syntax Error and Asset Copy Logic
 
