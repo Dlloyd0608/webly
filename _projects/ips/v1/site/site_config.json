@@ -1,0 +1,141 @@
+{
+  "siteId": "inpowersuite",
+  "version": "3.0",
+  "type": "business",
+  "tone": "professional",
+  
+  "theme": {
+    "mode": "light",
+    "primaryColor": "#d90429",
+    "secondaryColor": "#a10000",
+    "accentColor": "#ff0000",
+    "fontFamily": "Avenir Next, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+  },
+
+  "branding": {
+    "siteUrl": "www.inpowersuite.com",
+    "siteName": "inPowerSuite",
+    "tagLine": "inpower your business",
+    "logoPath": "/assets/",
+    "logos": {
+      "standard_logo": "website/ips_logo.png",
+      "small_logo": "website/ips_logo.png",
+      "alt_logo": "website/ips_logo_white.png",
+      "small_alt_logo": "website/ips_logo_white.png"
+    } 
+ },
+
+  "seo": {
+    "defaultTitle": "inPowerSuite - MLM Software Platform",
+    "defaultDescription": "Leading software platform for direct sales and MLM organizations",
+    "defaultKeywords": "MLM, direct sales, e-commerce, party plan"
+  },
+
+  "analytics": {
+    "googleAnalyticsId": "UA-XXXXXXX-X",
+    "trackingEnabled": true
+  },
+
+  "directories": {
+    "structure": {
+      "hubPattern": "hub{00-99}",
+      "maxHubs": 100,
+      "hubDefinitions": {
+        "hub00": {
+          "id": "hub00",
+          "name": "Home Hub",
+          "description": "Top-level pages (services, clients, demo, contact, etc.)",
+          "path": "./data/en/hub00"
+        },
+        "hub01": {
+          "id": "hub01",
+          "name": "Markets Hub",
+          "description": "Market-specific pages (MLM, Party Plan, B2B, B2C)",
+          "path": "./data/en/hub01"
+        },
+        "hub02": {
+          "id": "hub02",
+          "name": "Features Hub",
+          "description": "Product feature pages",
+          "path": "./data/en/hub02"
+        }
+      }
+    },
+
+    "fileTypes": {
+      "content": {
+        "extension": ".content.json",
+        "pattern": "{pageId}.content.json",
+        "description": "Pure content files (business user editable)"
+      },
+      "page": {
+        "extension": ".page.json",
+        "pattern": "{pageId}.page.json",
+        "description": "Page configuration (admin managed)"
+      }
+    },
+
+    "paths": {
+      "build": "./_buildr/",  
+      "templates": "./templates/",
+      "meta": "./site/",
+      "framework": "./site/",
+      "site": "./site/",
+      "src": "./src/en/",   
+      "styles": "./styles/",
+      "scripts": "./scripts/",
+      "media": "./assets/",
+      "dist": "./_dist/",
+      "pages": "./_dist/pages/"
+    },
+
+    "configFiles": {
+      "site": "./data/_site.json",
+      "menu": "./data/_menu.json",
+      "layouts": "./data/_layouts.json",
+      "pageTemplates": "./data/_page-templates.json",
+      "headerLayouts": "./data/_header-layouts.json",
+      "navigationLayouts": "./data/_navigation-layouts.json"
+    }
+  },
+
+  "languages": {
+    "default": "en",
+    "supported": ["en", "es", "fr"],
+    "fallback": "en"
+  },
+
+  "contact": {
+    "companyName": "Niche Group, Inc.",
+    "address": "2255 Glades Road, Ste 3254A, Boca Raton, FL 33431, USA",
+    "phone": "1 (561) 893-9300",
+    "email": "sales@nichegroup.com"
+  },
+
+  "footer": {
+    "copyrightYear": 2025,
+    "copyrightHolder": "Niche Group, Inc.",
+    "links": [
+      {
+        "label": "Partnerships",
+        "targetId": "partnerships"
+      },
+      {
+        "label": "Testimonials",
+        "targetId": "testimonials"
+      },
+      {
+        "label": "Pricing",
+        "targetId": "pricing"
+      },
+      {
+        "label": "Contact",
+        "targetId": "contact"
+      },
+      {
+        "label": "Privacy Policy",
+        "targetId": "privacy"
+      }
+    ]
+  }
+}
