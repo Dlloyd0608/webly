@@ -1,0 +1,70 @@
+{{!--
+  file: ./templates/partials/announcement-banner.hbs
+  Pattern 1: Announcement Banner
+  
+  Description:
+  Optional site-wide banner for announcements, warnings, or urgent messages.
+  Displays at the very top of the page, above the header.
+  
+  Configuration Source: site_config.json → announcementBanner
+  
+  Supported Types:
+  - info: General announcements, feature releases (light blue)
+  - warning: Scheduled maintenance, deprecation notices (light yellow)
+  - urgent: Critical issues, security alerts (light red)
+  
+  Features:
+  - Dismissible (optional close button)
+  - Optional call-to-action link
+  - Conditional rendering based on enabled flag
+  
+  Usage in page.hbs:
+  {{> announcement-banner site=site}}
+--}}
+
+{{#if site.announcementBanner.enabled}}
+<div class="announcement-banner {{site.announcementBanner.type}}" 
+     id="announcement-banner" 
+     role="alert" 
+     aria-live="polite">
+  
+  <div class="announcement-content">
+    {{!-- Icon based on type --}}
+    <span class="announcement-icon" aria-hidden="true">
+      {{#if (eq site.announcementBanner.type "info")}}ⓘ{{/if}}
+      {{#if (eq site.announcementBanner.type "warning")}}⚠{{/if}}
+      {{#if (eq site.announcementBanner.type "urgent")}}⚠{{/if}}
+    </span>
+    
+    {{!-- Message text --}}
+    <span class="announcement-message">
+      {{#if (eq site.announcementBanner.type "urgent")}}
+        <strong>Important:</strong> 
+      {{/if}}
+      {{#if (eq site.announcementBanner.type "warning")}}
+        <strong>Notice:</strong> 
+      {{/if}}
+      {{site.announcementBanner.message}}
+    </span>
+    
+    {{!-- Optional CTA link --}}
+    {{#if site.announcementBanner.link}}
+      <a href="{{linkPath site.announcementBanner.link.targetId}}" 
+         class="announcement-link"
+         aria-label="{{site.announcementBanner.link.text}}">
+        {{site.announcementBanner.link.text}}
+      </a>
+    {{/if}}
+  </div>
+  
+  {{!-- Dismissible close button --}}
+  {{#if site.announcementBanner.dismissible}}
+  <button class="announcement-dismiss" 
+          onclick="this.parentElement.style.display='none';" 
+          aria-label="Close announcement"
+          type="button">
+    <span aria-hidden="true">×</span>
+  </button>
+  {{/if}}
+</div>
+{{/if}}

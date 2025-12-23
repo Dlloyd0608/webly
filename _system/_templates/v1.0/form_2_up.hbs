@@ -1,0 +1,204 @@
+{{!--
+  file: ./templates/layouts/form-2-up.hbs
+  Pattern 14: Form Block - 2-up Layout
+  
+  Description:
+  Two-column form layout where fields can be arranged side-by-side or span 
+  full width. Perfect for forms with multiple short fields (name, email, 
+  company, phone) followed by a message field. More compact than 1-up layout 
+  while maintaining good UX.
+  
+  Content Structure Expected:
+  {
+    "id": "demo-form",
+    "layout": "form-2-up",
+    "elements": [
+      {
+        "type": "form",
+        "title": "Request a Demo",
+        "description": "We'll contact you shortly to schedule your personalized demo.",
+        "layout": "2-up",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Your Name (required)",
+            "type": "text",
+            "required": true,
+            "size": "half",
+            "placeholder": "John Doe"
+          },
+          {
+            "name": "email",
+            "label": "Email (required)",
+            "type": "email",
+            "required": true,
+            "size": "half",
+            "placeholder": "john@company.com"
+          },
+          {
+            "name": "message",
+            "label": "Tell us about your needs",
+            "type": "textarea",
+            "required": false,
+            "size": "full",
+            "rows": 4,
+            "placeholder": "What features are you most interested in?"
+          }
+        ],
+        "submitButton": {
+          "text": "Request Demo",
+          "style": "primary"
+        },
+        "successMessage": "Demo request received! We'll contact you within 24 hours."
+      }
+    ]
+  }
+--}}
+
+{{#each content.elements}}
+    {{#if (eq type "form")}}
+        <div class="form-container">
+            {{!-- Form Title --}}
+            {{#if title}}
+                <h2 class="form-title">{{escapeHtml title}}</h2>
+            {{/if}}
+
+            {{!-- Form Description/Instructions --}}
+            {{#if description}}
+                <p class="form-note">{{{markdown description}}}</p>
+            {{/if}}
+
+            {{!-- Form Element --}}
+            <form action="#" method="POST" class="ips-form ips-form-2-up" data-form-id="{{../content.id}}">
+                {{!-- Required Fields Notice --}}
+                <p class="form-note form-required-notice">Fields marked (required) are necessary.</p>
+
+                {{!-- Form Fields --}}
+                {{#each fields}}
+                    {{!-- Field size determines column width (half or full) --}}
+                    <div class="form-group {{size}}" data-field-name="{{name}}">
+                        {{!-- Field Label --}}
+                        {{#if label}}
+                            <label for="{{name}}">{{escapeHtml label}}</label>
+                        {{/if}}
+
+                        {{!-- Text Input --}}
+                        {{#if (eq type "text")}}
+                            <input 
+                                id="{{name}}" 
+                                name="{{name}}" 
+                                type="text" 
+                                {{#if placeholder}}placeholder="{{escapeHtml placeholder}}"{{/if}}
+                                {{#if maxlength}}maxlength="{{maxlength}}"{{/if}}
+                                {{#if required}}required{{/if}}
+                            >
+                        {{/if}}
+
+                        {{!-- Email Input --}}
+                        {{#if (eq type "email")}}
+                            <input 
+                                id="{{name}}" 
+                                name="{{name}}" 
+                                type="email" 
+                                {{#if placeholder}}placeholder="{{escapeHtml placeholder}}"{{/if}}
+                                {{#if required}}required{{/if}}
+                            >
+                        {{/if}}
+
+                        {{!-- Tel Input --}}
+                        {{#if (eq type "tel")}}
+                            <input 
+                                id="{{name}}" 
+                                name="{{name}}" 
+                                type="tel" 
+                                {{#if placeholder}}placeholder="{{escapeHtml placeholder}}"{{/if}}
+                                {{#if pattern}}pattern="{{pattern}}"{{/if}}
+                                {{#if required}}required{{/if}}
+                            >
+                        {{/if}}
+
+                        {{!-- Textarea (should always use size="full" for readability) --}}
+                        {{#if (eq type "textarea")}}
+                            <textarea 
+                                id="{{name}}" 
+                                name="{{name}}" 
+                                {{#if rows}}rows="{{rows}}"{{else}}rows="4"{{/if}}
+                                {{#if placeholder}}placeholder="{{escapeHtml placeholder}}"{{/if}}
+                                {{#if maxlength}}maxlength="{{maxlength}}"{{/if}}
+                                {{#if required}}required{{/if}}
+                            ></textarea>
+                        {{/if}}
+
+                        {{!-- Select Dropdown --}}
+                        {{#if (eq type "select")}}
+                            <select 
+                                id="{{name}}" 
+                                name="{{name}}" 
+                                {{#if required}}required{{/if}}
+                            >
+                                {{#each options}}
+                                    <option value="{{value}}" {{#if selected}}selected{{/if}}>
+                                        {{escapeHtml label}}
+                                    </option>
+                                {{/each}}
+                            </select>
+                        {{/if}}
+
+                        {{!-- Checkbox (should use size="full" for accessibility) --}}
+                        {{#if (eq type "checkbox")}}
+                            <div class="checkbox-wrapper">
+                                <input 
+                                    id="{{name}}" 
+                                    name="{{name}}" 
+                                    type="checkbox" 
+                                    {{#if checked}}checked{{/if}}
+                                    {{#if required}}required{{/if}}
+                                >
+                                <label for="{{name}}" class="checkbox-label">
+                                    {{escapeHtml label}}
+                                </label>
+                            </div>
+                        {{/if}}
+
+                        {{!-- Radio Button Group (should use size="full" for accessibility) --}}
+                        {{#if (eq type "radio")}}
+                            <div class="radio-group">
+                                {{#each options}}
+                                    <div class="radio-wrapper">
+                                        <input 
+                                            id="{{../name}}-{{@index}}" 
+                                            name="{{../name}}" 
+                                            type="radio" 
+                                            value="{{value}}"
+                                            {{#if selected}}checked{{/if}}
+                                            {{#if ../required}}required{{/if}}
+                                        >
+                                        <label for="{{../name}}-{{@index}}" class="radio-label">
+                                            {{escapeHtml label}}
+                                        </label>
+                                    </div>
+                                {{/each}}
+                            </div>
+                        {{/if}}
+                    </div>
+                {{/each}}
+
+                {{!-- Submit Button --}}
+                {{#if submitButton}}
+                    <div class="form-group full form-submit-container">
+                        <button type="submit" class="ips-button form-submit-button {{submitButton.style}}">
+                            {{escapeHtml submitButton.text}}
+                        </button>
+                    </div>
+                {{/if}}
+
+                {{!-- Success Message (Hidden by default) --}}
+                {{#if successMessage}}
+                    <div class="form-success-message" style="display: none;">
+                        <p>{{escapeHtml successMessage}}</p>
+                    </div>
+                {{/if}}
+            </form>
+        </div>
+    {{/if}}
+{{/each}}

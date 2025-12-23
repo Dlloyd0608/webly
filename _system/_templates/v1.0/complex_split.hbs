@@ -1,0 +1,171 @@
+{{!--
+  file: ./templates/layouts/complex-split.hbs
+  Pattern 10: Complex Split - Mixed Content
+  
+  Description:
+  Advanced split layout where content can be distributed to both left and right 
+  columns using position attributes. Allows for complex arrangements with mixed 
+  content on both sides.
+  
+  Configuration Source: *.content.json → blocks[id].layout = "complex-split"
+  
+  Content Structure:
+  {
+    "layout": "complex-split",
+    "elements": [
+      {"type": "title", "content": "...", "level": 1},
+      {"type": "media", "position": "left", ...},
+      {"type": "paragraph", "content": "...", "position": "right"},
+      {"type": "paragraph", "content": "...", "position": "right"},
+      {"type": "list", "title": "...", "position": "left", "items": [...]},
+      {"type": "list", "title": "...", "position": "right", "items": [...]},
+      {"type": "callToAction", "text": "...", "position": "left", ...},
+      {"type": "callToAction", "text": "...", "position": "right", ...}
+    ]
+  }
+  
+  Features:
+  - Title without position spans full width at top
+  - Elements with position="left" render in left column
+  - Elements with position="right" render in right column
+  - Default split: 50/50
+  - Configurable split ratios (30-70, 40-60, 50-50, 60-40, 70-30)
+  - Can have different CTAs on each side
+  - Perfect for feature comparisons or detailed explanations
+  - Responsive: stacks vertically on mobile
+  
+  CSS Classes:
+  - .static-section
+  - .complex-split
+  - .split-{ratio}
+  - .column-left
+  - .column-right
+  - .header-section (for title)
+  
+  Usage:
+  Called by renderer when block.layout === "complex-split"
+  
+  Common Use Cases:
+  - Feature comparisons (left vs right)
+  - Product tiers (basic vs premium)
+  - Before/after scenarios
+  - Multi-sided explanations
+--}}
+
+{{#with block}}
+{{!-- Sort elements by position using helper --}}
+{{#with (sortByPosition elements)}}
+
+<section class="static-section complex-split {{splitClass (default ../split "50-50")}}" 
+         data-block-id="{{../id}}"
+         data-pattern="complex-split"
+         {{#if ../className}}data-custom-class="{{../className}}"{{/if}}>
+  
+  {{!-- Header Section: Elements without position (spans full width) --}}
+  {{#if header}}
+  <div class="header-section">
+    {{#each header}}
+      
+      {{!-- Title Element --}}
+      {{#if (eq type "title")}}
+        {{{renderTitle this}}}
+      {{/if}}
+      
+      {{!-- Paragraph Element --}}
+      {{#if (eq type "paragraph")}}
+        {{{renderParagraph this}}}
+      {{/if}}
+      
+    {{/each}}
+  </div>
+  {{/if}}
+  
+  {{!-- Two-Column Layout --}}
+  <div class="columns-container">
+    
+    {{!-- Left Column --}}
+    <div class="column-left">
+      {{#each left}}
+        
+        {{!-- Media Element --}}
+        {{#if (eq type "media")}}
+          {{{renderMedia this}}}
+        {{/if}}
+        
+        {{!-- Title Element --}}
+        {{#if (eq type "title")}}
+          {{{renderTitle this}}}
+        {{/if}}
+        
+        {{!-- Paragraph Element --}}
+        {{#if (eq type "paragraph")}}
+          {{{renderParagraph this}}}
+        {{/if}}
+        
+        {{!-- List Element --}}
+        {{#if (eq type "list")}}
+          {{#if title}}
+            <h3 class="list-section-title">{{escapeHtml title}}</h3>
+          {{/if}}
+          {{{renderList this}}}
+        {{/if}}
+        
+        {{!-- Call-to-Action Element --}}
+        {{#if (eq type "callToAction")}}
+          {{{renderCTA this}}}
+        {{/if}}
+        
+        {{!-- Spacer Element --}}
+        {{#if (eq type "spacer")}}
+          {{{renderSpacer this}}}
+        {{/if}}
+        
+      {{/each}}
+    </div>
+    
+    {{!-- Right Column --}}
+    <div class="column-right">
+      {{#each right}}
+        
+        {{!-- Media Element --}}
+        {{#if (eq type "media")}}
+          {{{renderMedia this}}}
+        {{/if}}
+        
+        {{!-- Title Element --}}
+        {{#if (eq type "title")}}
+          {{{renderTitle this}}}
+        {{/if}}
+        
+        {{!-- Paragraph Element --}}
+        {{#if (eq type "paragraph")}}
+          {{{renderParagraph this}}}
+        {{/if}}
+        
+        {{!-- List Element --}}
+        {{#if (eq type "list")}}
+          {{#if title}}
+            <h3 class="list-section-title">{{escapeHtml title}}</h3>
+          {{/if}}
+          {{{renderList this}}}
+        {{/if}}
+        
+        {{!-- Call-to-Action Element --}}
+        {{#if (eq type "callToAction")}}
+          {{{renderCTA this}}}
+        {{/if}}
+        
+        {{!-- Spacer Element --}}
+        {{#if (eq type "spacer")}}
+          {{{renderSpacer this}}}
+        {{/if}}
+        
+      {{/each}}
+    </div>
+    
+  </div>
+  
+</section>
+
+{{/with}}
+{{/with}}

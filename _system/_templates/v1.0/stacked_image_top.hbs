@@ -1,0 +1,103 @@
+{{!--
+  file: ./templates/layouts/stacked-image-top.hbs
+  Pattern 8: Stacked Layout - Image Top
+  
+  Description:
+  Vertical stacked layout with image/carousel at the top, followed by content 
+  blocks. Best for visual-first presentations like product showcases or hero 
+  sections.
+  
+  Configuration Source: *.content.json → blocks[id].layout = "stacked-image-top"
+  
+  Content Structure:
+  {
+    "layout": "stacked-image-top",
+    "elements": [
+      {"type": "title", "content": "Product Features", "level": 1},
+      {"type": "media", "mediaType": "carousel", "position": "top", ...},
+      {"type": "paragraph", "content": "..."},
+      {"type": "list", "style": "bullets", "items": [...]},
+      {"type": "paragraph", "content": "..."},
+      {"type": "list", "style": "checkmark", "items": [...]},
+      {"type": "callToAction", "text": "...", "targetId": "..."}
+    ]
+  }
+  
+  Features:
+  - Title appears above image (optional)
+  - Image/carousel displays full-width at top
+  - Content flows vertically below image
+  - Can alternate paragraphs and lists
+  - Supports markdown in content
+  - No split ratios (full-width sections)
+  - Perfect for hero sections or featured content
+  
+  CSS Classes:
+  - .static-section
+  - .stacked-image-top
+  - .media-container (full-width)
+  - .static-text-container (full-width)
+  
+  Usage:
+  Called by renderer when block.layout === "stacked-image-top"
+  
+  Common Use Cases:
+  - Hero sections with full-width images
+  - Product showcases with carousel
+  - Feature announcements
+  - Visual-first presentations
+--}}
+
+{{#with block}}
+<section class="static-section stacked-image-top" 
+         data-block-id="{{id}}"
+         data-pattern="stacked-image-top"
+         {{#if className}}data-custom-class="{{className}}"{{/if}}>
+  
+  {{!-- Title (appears above image if present) --}}
+  {{#each elements}}
+    {{#if (eq type "title")}}
+      {{{renderTitle this}}}
+    {{/if}}
+  {{/each}}
+  
+  {{!-- Media Container (Full-Width at Top) --}}
+  <div class="media-container">
+    {{!-- Find and render media element with position="top" --}}
+    {{#each elements}}
+      {{#if (and (eq type "media") (eq position "top"))}}
+        {{{renderMedia this}}}
+      {{/if}}
+    {{/each}}
+  </div>
+  
+  {{!-- Content Container (Below Image) --}}
+  <div class="static-text-container">
+    {{!-- Render all non-title, non-media elements in order --}}
+    {{#each elements}}
+      
+      {{!-- Paragraph Element --}}
+      {{#if (eq type "paragraph")}}
+        {{{renderParagraph this}}}
+      {{/if}}
+      
+      {{!-- List Element --}}
+      {{#if (eq type "list")}}
+        {{{renderList this}}}
+      {{/if}}
+      
+      {{!-- Call-to-Action Element --}}
+      {{#if (eq type "callToAction")}}
+        {{{renderCTA this}}}
+      {{/if}}
+      
+      {{!-- Spacer Element --}}
+      {{#if (eq type "spacer")}}
+        {{{renderSpacer this}}}
+      {{/if}}
+      
+    {{/each}}
+  </div>
+  
+</section>
+{{/with}}

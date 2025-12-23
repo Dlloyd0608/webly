@@ -1,0 +1,56 @@
+{{!--
+  file: ./templates/partials/header.hbs
+  Pattern 2: App Header (Logo + Branding)
+  
+  Description:
+  Main application header refactored to remove redundant site name text link.
+  Home-link functionality is delegated entirely to the white branding asset.
+  Configuration Source: site_config.json → branding.logos
+--}}
+
+<div class="app-header">
+  {{!-- Hamburger Icon / Home Button --}}
+  <div class="hamburger-icon" id="hamburgerIcon" role="button" tabindex="0" aria-label="Go to home page">
+    <a href="/" aria-label="Home" style="display: flex; flex-direction: column; justify-content: space-between; height: 25px; text-decoration: none;">
+      <span style="display: block; height: 3px; background: white; border-radius: 2px;"></span>
+      <span style="display: block; height: 3px; background: white; border-radius: 2px;"></span>
+    </a>
+  </div>
+
+  {{!-- Logo Branding (Primary Home Link) --}}
+  <div class="header-content">
+    <a href="/" class="header-logo-link" aria-label="{{site.branding.siteName}} Home">
+      
+      {{!-- Dynamic Logo Selection: White Logo for dark background contrast --}}
+      {{#if site.branding.logo.alt_logo}}
+        <img src="{{site.branding.logo.alt_logo}}" 
+             alt="{{site.branding.siteName}} Logo" 
+             class="header-logo"
+             height="40">
+      {{/if}}
+      
+      {{!-- REMOVED: Redundant <h1>inpowersuite.com</h1> text link --}}
+    </a>
+    
+    {{!-- Branding Tagline (Hidden on mobile via CSS) --}}
+    {{#if site.branding.tagLine}}
+      <p class="header-tagline">{{site.branding.tagLine}}</p>
+    {{/if}}
+  </div>
+  
+  {{!-- Header Controls (Language Selector) --}}
+  <div class="header-controls">
+    <div id="language-selector" class="language-selector">
+      <select id="lang-select" 
+              title="Select Language" 
+              aria-label="Select Language"
+              class="language-dropdown">
+        {{#each site.languages.supported}}
+          <option value="{{this}}" {{#if (eq this ../currentLanguage)}}selected{{/if}}>
+            {{upper this}}
+          </option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+</div>
