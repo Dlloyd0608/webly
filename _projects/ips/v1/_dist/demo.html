@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Demo | inPowerSuite</title><meta name="description" content="Live demonstrations of the inPowerSuite platform for MLM, B2C, and enterprise operations."><meta name="keywords" content="live demo, platform showcase, software walkthrough"><meta property="og:title" content="Demo"><meta property="og:description" content="Live demonstrations of the inPowerSuite platform for MLM, B2C, and enterprise operations."><meta property="og:type" content="website"><meta property="og:url" content="www.inpowersuite.com/demo.html"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Demo"><meta name="twitter:description" content="Live demonstrations of the inPowerSuite platform for MLM, B2C, and enterprise operations."><link rel="stylesheet" href="/_styles.css"><link rel="stylesheet" href="/styles/layout.css"><link rel="stylesheet" href="/styles/content.css"><link rel="stylesheet" href="/styles/theme.css"><link rel="stylesheet" href="/styles/responsive.css"><link rel="preconnect" href="./assets/" crossorigin><script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script><script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXX-X');</script></head><body data-page-id="demo" data-page-type="spoke" data-hub="hub00"><a href="#main-content" class="skip-to-main" tabindex="1">Skip to main content</a><header class="sticky-header-section" role="banner"><div class="app-header"><div class="hamburger-icon" id="hamburgerIcon" role="button" tabindex="0" aria-label="Go to home page"><a href="/" aria-label="Home" style="display: flex; flex-direction: column; justify-content: space-between; height: 25px; text-decoration: none;"><span style="display: block; height: 3px; background: white; border-radius: 2px;"></span><span style="display: block; height: 3px; background: white; border-radius: 2px;"></span></a></div><div class="header-content"><a href="/" class="header-logo-link" aria-label="inPowerSuite Home"><img src="/assets/website/ips_logo_white.png" 
+                 alt="inPowerSuite Logo" 
+                 class="header-logo"
+                 height="40"></a><p class="header-tagline">inpower your business</p></div><div class="header-controls"><div id="language-selector" class="language-selector"><select id="lang-select" 
+                  title="Select Language" 
+                  aria-label="Select Language"
+                  class="language-dropdown"><option value="en" selected>
+                EN</option><option value="es" >
+                ES</option><option value="fr" >
+                FR</option></select></div></div></div><nav id="ips-main-menu" class="main-menu-bar" role="navigation" aria-label="Main Navigation"><a href="/" 
+             class="main-menu-item " 
+             data-nav-id="home"
+             >
+            HOME</a><a href="/markets.html" 
+             class="main-menu-item " 
+             data-nav-id="markets"
+             >
+            MARKETS</a><a href="/clients.html" 
+             class="main-menu-item " 
+             data-nav-id="clients"
+             >
+            CLIENTS</a><a href="/services.html" 
+             class="main-menu-item " 
+             data-nav-id="services"
+             >
+            SERVICES</a><a href="/demo.html" 
+             class="main-menu-item active" 
+             data-nav-id="demo"
+             aria-current="page">
+            DEMO</a></nav></header><section class="body-section"><main class="page-content" id="main-content" role="main"><div class="static-page-content" id="staticPageContainer"><section class="static-section text-block-section " 
+         data-block-id=""
+         data-pattern="text-block"><div class="static-text-container" style="max-width: 800px; margin: 0 auto;"><p>inPowerSuite offers live demos for prospective clients to experience the full functionality of our platform. Our demos showcase the capabilities of our MLM, B2C, and enterprise solutions.</p></div></section><section class="static-section feature-list-section" 
+         data-block-id=""
+         data-pattern="grid-layout"
+         ><h2 class="section-title">Live Platform Showcase</h2><div class="feature-panel-container columns-2"><div class="feature-panel"><div class="feature-panel-header"></div><div class="feature-panel-content"><ul class="list-checkmark"><li>KPI Tracking Dashboards</li><li>Member enrollment flows</li><li>Genealogy tools</li></ul></div></div><div class="feature-panel"><div class="feature-panel-header"></div><div class="feature-panel-content"><ul class="list-checkmark"><li>Firsthand platform experience</li><li>Solution tailoring analysis</li><li>Direct access to specialists</li></ul></div></div></div></section><section class="static-section feature-list-section" 
+         data-block-id=""
+         data-pattern="grid-layout"
+         ><div class="feature-panel-container columns-2"><div class="feature-panel"><div class="feature-panel-header"></div><div class="feature-panel-content"><ul class="list-checkmark"><li>Dedicated Sales Rep for analysis</li><li>Configuration checklists</li><li>Functional User Manuals</li><li>Conversion workbooks</li><li>Site Administration access</li></ul></div></div></div></section></div></main></section><footer class="footer" role="contentinfo"><div class="footer-links" id="footer-nav-links"><a href="/partnerships.html" 
+             class="footer-link "
+             data-nav-id="">
+            PARTNERSHIPS</a><a href="/testimonials.html" 
+             class="footer-link "
+             data-nav-id="">
+            TESTIMONIALS</a><a href="/pricing.html" 
+             class="footer-link "
+             data-nav-id="">
+            PRICING</a><a href="/contact.html" 
+             class="footer-link "
+             data-nav-id="">
+            CONTACT</a><a href="/privacy.html" 
+             class="footer-link "
+             data-nav-id="">
+            PRIVACY POLICY</a></div><div class="footer-copy" id="footer-copy-content"><p class="copyright">
+        © 2025 Niche Group, Inc.. All Rights Reserved.</p></div></footer><script>
+    // Simple carousel functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousels = document.querySelectorAll('.carousel-container');
+      
+      carousels.forEach(carousel => {
+        const track = carousel.querySelector('.carousel-track');
+        const items = carousel.querySelectorAll('.carousel-item');
+        const dots = carousel.querySelectorAll('.carousel-dot');
+        const prevBtn = carousel.querySelector('.carousel-control.prev');
+        const nextBtn = carousel.querySelector('.carousel-control.next');
+        
+        let currentIndex = 0;
+        const totalItems = items.length;
+        
+        function showSlide(index) {
+          // Hide all items
+          items.forEach(item => item.classList.remove('active'));
+          dots.forEach(dot => dot.classList.remove('active'));
+          
+          // Show current item
+          if (items[index]) {
+            items[index].classList.add('active');
+          }
+          if (dots[index]) {
+            dots[index].classList.add('active');
+          }
+          
+          currentIndex = index;
+        }
+        
+        function nextSlide() {
+          const next = (currentIndex + 1) % totalItems;
+          showSlide(next);
+        }
+        
+        function prevSlide() {
+          const prev = (currentIndex - 1 + totalItems) % totalItems;
+          showSlide(prev);
+        }
+        
+        // Button event listeners
+        if (nextBtn) {
+          nextBtn.addEventListener('click', nextSlide);
+        }
+        if (prevBtn) {
+          prevBtn.addEventListener('click', prevSlide);
+        }
+        
+        // Dot event listeners
+        dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => showSlide(index));
+        });
+        
+        // Keyboard navigation
+        carousel.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') prevSlide();
+          if (e.key === 'ArrowRight') nextSlide();
+        });
+        
+        // Auto-advance (optional, if configured)
+      });
+    });</script></body></html>
