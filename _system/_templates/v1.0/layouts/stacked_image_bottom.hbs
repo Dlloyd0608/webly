@@ -1,0 +1,106 @@
+{{!--
+  file: ./templates/layouts/stacked-image-bottom.hbs
+  Pattern 9: Stacked Layout - Image Bottom
+  
+  Description:
+  Vertical stacked layout with content first, followed by image/carousel at 
+  the bottom. Best for content-first presentations where image serves as proof 
+  or illustration (testimonials, case studies, results).
+  
+  Configuration Source: *.content.json → blocks[id].layout = "stacked-image-bottom"
+  
+  Content Structure:
+  {
+    "layout": "stacked-image-bottom",
+    "elements": [
+      {"type": "title", "content": "Customer Success Stories", "level": 1},
+      {"type": "paragraph", "content": "..."},
+      {"type": "list", "title": "Key Outcomes", "style": "checkmark", "items": [...]},
+      {"type": "paragraph", "content": "..."},
+      {"type": "media", "mediaType": "carousel", "position": "bottom", ...},
+      {"type": "callToAction", "text": "...", "targetId": "..."}
+    ]
+  }
+  
+  Features:
+  - Title at top
+  - Content flows vertically
+  - Image/carousel displays full-width at bottom (before CTA)
+  - Can alternate paragraphs and lists
+  - Image serves as proof/illustration
+  - No split ratios (full-width sections)
+  - Perfect for testimonials, case studies, evidence-based content
+  
+  CSS Classes:
+  - .static-section
+  - .stacked-image-bottom
+  - .media-container (full-width)
+  - .static-text-container (full-width)
+  
+  Usage:
+  Called by renderer when block.layout === "stacked-image-bottom"
+  
+  Common Use Cases:
+  - Testimonials with client logos
+  - Case studies with result screenshots
+  - Feature explanations with proof images
+  - Success stories with company logos
+--}}
+
+{{#with block}}
+<section class="static-section stacked-image-bottom" 
+         data-block-id="{{id}}"
+         data-pattern="stacked-image-bottom"
+         {{#if className}}data-custom-class="{{className}}"{{/if}}>
+  
+  {{!-- Title (at top) --}}
+  {{#each elements}}
+    {{#if (eq type "title")}}
+      {{{renderTitle this}}}
+    {{/if}}
+  {{/each}}
+  
+  {{!-- Content Container (Above Image) --}}
+  <div class="static-text-container">
+    {{!-- Render all non-title, non-media, non-CTA elements in order --}}
+    {{#each elements}}
+      
+      {{!-- Paragraph Element --}}
+      {{#if (eq type "paragraph")}}
+        {{{renderParagraph this}}}
+      {{/if}}
+      
+      {{!-- List Element --}}
+      {{#if (eq type "list")}}
+        {{{renderList this}}}
+      {{/if}}
+      
+      {{!-- Spacer Element --}}
+      {{#if (eq type "spacer")}}
+        {{{renderSpacer this}}}
+      {{/if}}
+      
+    {{/each}}
+  </div>
+  
+  {{!-- Media Container (Full-Width at Bottom) --}}
+  <div class="media-container">
+    {{!-- Find and render media element with position="bottom" --}}
+    {{#each elements}}
+      {{#if (and (eq type "media") (eq position "bottom"))}}
+        {{{renderMedia this}}}
+      {{/if}}
+    {{/each}}
+  </div>
+  
+  {{!-- Call-to-Action (After Image) --}}
+  {{#each elements}}
+    {{#if (eq type "callToAction")}}
+      <div class="cta-container">
+        {{{renderCTA this}}}
+      </div>
+    {{/if}}
+  {{/each}}
+  
+</section>
+{{/with}}
