@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "systemName": "Webly",
+  "description": "Multi-project static site generator",
+  
+  "paths": {
+    "projectsRoot": "./_projects/",
+    "templatesRoot": "./_system/_templates/",
+    "sharedRoot": "./_system/_shared/",
+    "outputRoot": "./_output/",
+    "logsRoot": "./_system/_logs/"
+  },
+  
+  "templates": {
+    "defaultVersion": "v1.0",
+    "latestVersion": "v1.0",
+    "supportedVersions": ["v1.0"],
+    "autoUpgrade": false,
+    "allowProjectOverride": true
+  },
+  
+  "languages": {
+    "default": "en",
+    "supported": ["en", "es", "fr", "de", "pt", "ja", "zh"]
+  },
+  
+  "build": {
+    "defaultMode": "development",
+    "modes": ["development", "staging", "production"],
+    "outputFormat": "static-html",
+    "minifyHTML": false,
+    "prettyPrint": true,
+    "generateSourceMaps": false,
+    "multiProjectBuildMode": "sequential",
+    "maxConcurrentBuilds": 1
+  },
+  
+  "output": {
+    "keepDistStable": true,
+    "timestampedBuilds": true,
+    "maxBuildsToKeep": 10,
+    "createSymlinkToLatest": true
+  },
+  
+  "logging": {
+    "level": "info",
+    "showTimestamps": true,
+    "colorize": true,
+    "logToFile": true,
+    "rotateDaily": true
+  },
+  
+  "features": {
+    "elementBasedPatterns": true,
+    "carouselSupport": true,
+    "formValidation": false,
+    "multiLanguage": true,
+    "versionedTemplates": true
+  }
+}
+``
