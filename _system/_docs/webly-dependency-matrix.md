@@ -220,21 +220,21 @@ build-all.js
 
 ### Unchanged Files (4)
 
-✅ helpers.js - 100% unchanged
-✅ handlebars_helpers.js - 100% unchanged
-✅ All template files (*.hbs) - 100% unchanged
-✅ All configuration schemas - 100% unchanged
+- ✅ helpers.js - 100% unchanged
+- ✅ handlebars_helpers.js - 100% unchanged
+- ✅ All template files (*.hbs) - 100% unchanged
+- ✅ All configuration schemas - 100% unchanged
 
 ### Refactored Files (3)
 
-🔧 watcher.js - 75% keep, 25% enhance
-🔧 renderer.js - 85% keep, 15% enhance
-🔧 generator.js - 70% keep, 25% enhance
+- 🔧 watcher.js - 75% keep, 25% enhance
+- 🔧 renderer.js - 85% keep, 15% enhance
+- 🔧 generator.js - 70% keep, 25% enhance
 
 ### New Files (2)
 
-✨ cli.js - New creation
-✨ build-all.js - New creation
+- ✨ cli.js - New creation
+- ✨ build-all.js - New creation
 
 
 ## Key Insights
