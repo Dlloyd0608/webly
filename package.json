@@ -1,33 +1,39 @@
 {
-  "name": "webgen-phase1",
-  "version": "2.0.0",
-  "description": "WebGen Phase 3 - Static Site Generator with index.html support",
-  "main": "_buildr/generator.js",
+  "name": "webly",
+  "version": "1.0.0",
+  "description": "Webly - Multi-project static site generator",
+  "main": "_system/_buildr/generator.js",
   "scripts": {
-    "cms-watcher": "node _buildr/watcher.js",
-    "cms-regen-page": "node _buildr/generator.js --incremental",
-    "cms-regen-site": "node _buildr/generator.js --full-rebuild",
-    "dev": "npm run cms-watcher",
-    "build": "npm run cms-regen-site",
-    "start": "npm run cms-watcher",
-    "test": "node _buildr/generator.js --full-rebuild && echo 'Build test passed'"
+    "build": "node _system/_buildr/generator.js",
+    "build:all": "node _system/_buildr/build-all.js",
+    "build:all:promote": "node _system/_buildr/build-all.js --promote",
+    "dev": "node _system/_buildr/watcher.js",
+    "project:list": "node _system/_buildr/cli.js list",
+    "project:info": "node _system/_buildr/cli.js info",
+    "project:create": "node _system/_buildr/cli.js create",
+    "project:clone": "node _system/_buildr/cli.js clone",
+    "project:archive": "node _system/_buildr/cli.js archive",
+    "template:list": "node _system/_buildr/cli.js list-templates",
+    "template:upgrade": "node _system/_buildr/cli.js upgrade-template",
+    "clean": "node _system/_buildr/cli.js clean",
+    "clean:all": "node _system/_buildr/cli.js clean-all",
+    "test": "echo 'Run: npm run build -- --project=ips-v1' && exit 0"
   },
   "keywords": [
     "static-site",
     "generator",
-    "webgen",
-    "inpowersuite"
+    "multi-project",
+    "webly"
   ],
-  "author": "Your Team",
+  "author": "Webly Team",
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^4.7.8"
+    "handlebars": "^4.7.8",
+    "marked": "^9.1.6"
   },
   "devDependencies": {
     "browser-sync": "^3.0.4",
-    "chokidar": "^4.0.3",
-    "eslint": "^8.50.0",
-    "prettier": "^3.0.0"
+    "chokidar": "^4.0.3"
   },
   "engines": {
     "node": ">=16.0.0"
