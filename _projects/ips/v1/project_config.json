@@ -4,31 +4,30 @@
   "clientName": "Niche Group, Inc.",
   "status": "active",
   "createdDate": "2025-01-15",
-  "lastModified": "2025-12-22T00:00:00Z",
-  "lastBuilt": null,
-  
+  "lastModified": "2025-12-28T22:39:44.935Z",
+  "lastBuilt": "2025-12-28T22:39:44.935Z",
   "template": {
     "version": "v1.0",
     "autoUpgrade": false,
     "upgradePolicy": "manual"
   },
-  
   "languages": {
     "default": "en",
-    "supported": ["en", "es", "fr"],
+    "supported": [
+      "en",
+      "es",
+      "fr"
+    ],
     "fallback": "en"
   },
-  
   "paths": {
     "site": "./site/",
     "src": "./src/",
     "assets": "./assets/",
     "styles": "./styles/",
     "scripts": "./scripts/",
-    "dist": "./_dist/",
-    "output": "../../_output/ips-v1/"
+    "dist": "./_dist/"
   },
-  
   "build": {
     "mode": "development",
     "cleanBeforeBuild": false,
@@ -41,7 +40,6 @@
     "outputToTimestampedFolder": true,
     "promoteToDist": false
   },
-  
   "deployment": {
     "environments": {
       "staging": {
@@ -65,34 +63,36 @@
       "cacheTTL": 86400
     }
   },
-  
   "users": [
     {
       "userId": "admin",
       "username": "site_admin",
       "role": "administrator",
       "passwordHash": "",
-      "permissions": ["all"],
+      "permissions": [
+        "all"
+      ],
       "lastLogin": null
     }
   ],
-  
   "monitoring": {
     "analyticsEnabled": false,
     "trackingId": "",
     "errorReporting": false,
     "performanceMonitoring": false
   },
-  
   "backup": {
     "enabled": false,
     "frequency": "daily",
     "retention": 30,
     "lastBackup": null
   },
-  
   "metadata": {
-    "tags": ["mlm", "ecommerce", "b2b"],
+    "tags": [
+      "mlm",
+      "ecommerce",
+      "b2b"
+    ],
     "industry": "software",
     "tier": "enterprise",
     "billingId": ""
