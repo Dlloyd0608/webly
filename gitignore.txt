@@ -1,0 +1,29 @@
+## .gitignore
+
+# Build output
+dist/
+dist-builds/
+
+# Dependencies
+node_modules/
+
+# Temp files
+.temp/
+*.tmp
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build locks
+.build.lock

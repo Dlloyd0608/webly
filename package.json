@@ -1,0 +1,35 @@
+{
+  "name": "webgen-phase1",
+  "version": "2.0.0",
+  "description": "WebGen Phase 3 - Static Site Generator with index.html support",
+  "main": "_buildr/generator.js",
+  "scripts": {
+    "cms-watcher": "node _buildr/watcher.js",
+    "cms-regen-page": "node _buildr/generator.js --incremental",
+    "cms-regen-site": "node _buildr/generator.js --full-rebuild",
+    "dev": "npm run cms-watcher",
+    "build": "npm run cms-regen-site",
+    "start": "npm run cms-watcher",
+    "test": "node _buildr/generator.js --full-rebuild && echo 'Build test passed'"
+  },
+  "keywords": [
+    "static-site",
+    "generator",
+    "webgen",
+    "inpowersuite"
+  ],
+  "author": "Your Team",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "chokidar": "^4.0.3",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
