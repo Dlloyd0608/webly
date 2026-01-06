@@ -417,7 +417,7 @@ class WebGenBuilder {
 
   /**
    * Build individual page
-   * ENHANCED - Output path now uses this.paths.output
+   * FIXED - Pass only filename to renderer.writeHTML() to avoid path recursion
    */
   async buildPage(pageId, language = 'en') {
     try {
@@ -425,9 +425,9 @@ class WebGenBuilder {
       let filename = `${pageId}.html`;
       if (pageId === 'home') filename = 'index.html';
       
-      const outputPath = path.join(this.paths.output, filename);
-      
-      this.renderer.writeHTML(outputPath, html);
+      // BUGFIX: Pass only filename, not full path
+      // renderer.writeHTML() will join with this.paths.output internally
+      this.renderer.writeHTML(filename, html);
       console.log(`[Builder] ✓ Generated: ${filename}`);
     } catch (error) {
       console.error(`[Builder] ✗ Error on ${pageId}: ${error.message}`);
