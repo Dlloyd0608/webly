@@ -69,8 +69,10 @@ class HTMLRenderer {
     await this.loadSiteConfigs();
     await this.loadTemplates(); // Compiles all layouts into cache
     
-    // ENHANCED: Pass paths and projectConfig to helpers
-    registerHandlebarsHelpers(this.paths, this.projectConfig, this.mediaBasePath, this.mediaFallbackPath);
+    // BUGFIX: Pass only the 3 parameters that registerHandlebarsHelpers expects
+    // Function signature: registerHandlebarsHelpers(buildConfig, mediaBasePath, mediaFallbackPath)
+    // We pass projectConfig as buildConfig (contains paths), then the two media paths
+    registerHandlebarsHelpers(this.projectConfig, this.mediaBasePath, this.mediaFallbackPath);
   }
 
   /**
