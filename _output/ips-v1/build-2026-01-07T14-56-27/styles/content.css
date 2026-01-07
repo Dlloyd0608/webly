@@ -1,0 +1,326 @@
+/* ADDED TO content.css (v2.1 | Final Performance & Spacing Stable) */
+
+/* ============================================
+   NEW: FORM DEFINITION STYLES
+   ============================================ */
+.form-container {
+    max-width: 900px;
+    margin: var(--spacing-xxlarge) auto;
+    padding: var(--spacing-xxlarge);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.form-title {
+    font-size: var(--font-size-xxlarge);
+    color: var(--brand-primary);
+    margin-bottom: var(--spacing-medium);
+    padding-bottom: var(--spacing-small);
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.form-note {
+    font-size: var(--font-size-small);
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-medium);
+    font-style: italic;
+}
+
+.ips-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-tiny);
+    margin-bottom: var(--spacing-small);
+    min-width: 45%;
+}
+
+.form-group.full {
+    width: 100%;
+    flex-basis: 100%;
+    min-width: unset;
+}
+
+.form-group.half {
+    width: 48%; /* Allows a small gap */
+    flex-grow: 1;
+    min-width: 45%;
+}
+
+.form-group label {
+    font-size: var(--font-size-regular);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-group input:not([type="checkbox"]),
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    font-size: var(--font-size-regular);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 1px var(--brand-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.ips-button {
+    padding: var(--spacing-small) var(--spacing-xlarge);
+    background: var(--brand-primary);
+    color: var(--text-inverse);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.ips-button:hover {
+    background: var(--brand-hover);
+}
+
+.form-submit-container {
+    margin-top: var(--spacing-medium);
+    align-self: flex-start;
+}
+
+
+/* ============================================
+   LINK STYLES
+   ============================================ */
+.detail-link, .detail-link-panel {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+}
+.detail-link:hover, .detail-link-panel:hover {
+    color: var(--brand-primary);
+    text-decoration: underline;
+    opacity: 0.9;
+}
+.detail-link-title h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-primary);
+    cursor: pointer;
+}
+.read-more-wrapper {
+    margin-top: var(--spacing-medium);
+}
+.read-more-link {
+    color: var(--brand-primary); 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.read-more-link:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+
+/* ============================================
+   HUB/SPOKE SPECIFIC STYLES
+   ============================================ */
+/* --- SIBLING NAVIGATION BAR --- (existing rules) */
+.sibling-nav-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-small);
+    margin: var(--spacing-large) auto var(--spacing-xxlarge);
+    padding: var(--spacing-medium);
+    background: var(--bg-accent);
+    border-radius: 8px;
+    max-width: 900px;
+    border: 1px solid var(--border-secondary);
+}
+.sibling-nav-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-tertiary);
+    padding: 8px 12px;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.sibling-nav-item.active {
+    background: var(--brand-secondary);
+    color: var(--text-inverse);
+    border-color: var(--brand-secondary);
+}
+
+/* ============================================
+   STATIC CONTENT SECTIONS - LAYOUT INVALIDATION FIX
+   ============================================ */
+
+/* Optimized .static-section rule for horizontal flex rendering */
+.static-section {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important; /* Prevents layout recalculation reflows */
+    align-items: center;
+    gap: var(--spacing-xlarge);
+    margin-bottom: var(--spacing-xxlarge);
+    width: 100% !important;
+    box-sizing: border-box;
+}
+.static-section:last-child {
+    margin-bottom: 0;
+}
+
+/* CRITICAL FIX for Layout Invalidation */
+.column {
+    /* Ensures the element takes exactly 50% and nothing forces it to change size */
+    flex: 0 0 calc(50% - (var(--spacing-xlarge) / 2)) !important; 
+    max-width: calc(50% - (var(--spacing-xlarge) / 2)) !important;
+    min-width: 0; /* Critical for Safari flex calculation */
+    box-sizing: border-box;
+}
+
+/* Added: Structural rigidity for text containers within columns */
+.column .static-text-container {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow: hidden; /* Helps contain floating elements */
+}
+.static-text-container p {
+    margin-bottom: var(--spacing-medium);
+}
+.static-text-container ul {
+    margin-bottom: var(--spacing-medium);
+}
+
+
+/* --- Split Section Definitions - SAFARI-COMPATIBLE WIDTHS --- */
+/* These rules must be preserved for specific split ratios */
+.static-section.split-50-50 .column {
+    flex-basis: calc(50% - (var(--spacing-xlarge) / 2));
+    max-width: calc(50% - (var(--spacing-xlarge) / 2));
+}
+
+.static-section.split-30-70 .column-left {
+    flex-basis: calc(30% - (var(--spacing-xlarge) / 2));
+    max-width: calc(30% - (var(--spacing-xlarge) / 2));
+}
+.static-section.split-30-70 .column-right {
+    flex-basis: calc(70% - (var(--spacing-xlarge) / 2));
+    max-width: calc(70% - (var(--spacing-xlarge) / 2));
+}
+
+/* Reverse: Image | Text (Image Left) */
+.static-section.image-left {
+    flex-direction: row-reverse;
+}
+
+.media-container {
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 0;
+}
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+/* centered intro-block styles (for Services top section) */
+.static-section.centered-intro-block {
+    text-align: center; 
+    justify-content: center; 
+    align-items: center;
+}
+.static-section.centered-intro-block .static-text-container {
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+
+/* --- FEATURE LIST STYLES (Includes Vertical Rhythm Fix) --- */
+.feature-list-section {
+    display: block; 
+}
+.feature-panel-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-large);
+    justify-content: space-between;
+}
+.feature-panel {
+    background: var(--bg-tertiary);
+    border-radius: 6px;
+    padding: var(--spacing-large); /* Increased padding for better card look */
+    box-shadow: var(--shadow-sm);
+    flex-basis: calc(50% - var(--spacing-medium)); 
+    display: flex; /* Added flex to structure content for vertical spacing control */
+    flex-direction: column;
+}
+
+/* --- Vertical Rhythm Fix for Paragraphs inside Grid Panels --- */
+.feature-panel p {
+    /* Increased margin to create clear separation between semantic text blocks */
+    margin-bottom: var(--spacing-medium); 
+    line-height: 1.6;
+}
+
+/* Ensures the last item before the CTA does not have extra space */
+.feature-panel p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Ensure only the read-more wrapper is pushed to the bottom */
+.feature-panel .read-more-wrapper {
+    margin-top: auto; 
+    padding-top: var(--spacing-small);
+}
+
+/* Specifically target the last text paragraph to prevent double-spacing before CTA */
+.feature-panel p:nth-last-of-type(2) {
+    margin-bottom: var(--spacing-small);
+}
+
+/* Grid Column Widths */
+.feature-panel-container.columns-3 .feature-panel {
+    flex-basis: calc(33.333% - var(--spacing-medium));
+}
+.feature-panel-container.columns-4 .feature-panel {
+    flex-basis: calc(25% - var(--spacing-medium));
+}
+
+
+/* --- MOBILE STACKING --- */
+@media (max-width: 768px) {
+    .static-section {
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+    .column {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+    }
+}
